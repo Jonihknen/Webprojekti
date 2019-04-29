@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login</title>s
+    <title>Login</title>
     <link rel="stylesheet" type="text/css" href="logreg.css">
 
 </head>

@@ -26,7 +26,7 @@
             <input type="password" name="password_2" placeholder="Confirm password">
         </div>
         <div class="input-group">
-            <button type="submit" name="login" class="btn">
+            <button type="submit" name="register" class="btn">
                 <span>REGISTER </span></button>
         </div>
         <p>

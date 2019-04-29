@@ -7,7 +7,7 @@
 
 function OpenCon(){
 
-    $conn = new mysqli("localhost", "olso", "olso", "webprojekti") or die("coccet failed: %s\n". $conn->error);
+    $conn = new mysqli("localhost", "olso", "olso", "webprojekti") or die("connect failed: %s\n". $conn->error);
 
     return $conn;
 
@@ -16,7 +16,7 @@ function OpenCon(){
 
     if (isset($_POST["register"])) {
         $username = strip_tags($_POST["username"]);
-        $password_1 = strip_tags($_POST["password_1"]);
+        $password_1 = strip_tags($_POST["password"]);
         $password_2 = strip_tags($_POST["password_2"]);
 
         if (empty($username)) {
@@ -52,9 +52,9 @@ function OpenCon(){
             $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
             $result = mysqli_query($db, $query);
             if (mysqli_num_rows($result) == 1){
-                $SESSION["username"] = $username;
+                $_SESSION["username"] = $username;
                 $_SESSION["success"] = "you are now logged in";
-                header("Location: \popo.php");
+                header("Location: prontpage.php");
             }else{
                 array_push($errors, "wrong username or password");
             }

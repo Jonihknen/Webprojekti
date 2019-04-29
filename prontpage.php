@@ -1,6 +1,6 @@
 <?php include("server.php");
 
-    if (empty($_session["username"])) {
+    if (empty($_SESSION["username"])) {
         header("location: login.php");
     }?>
 <!DOCTYPE html>
@@ -26,7 +26,7 @@
         <?php endif ?>
 
         <?php if (isset($_SESSION["username"])): ?>
-            <p>Welcome <strong<?php echo $_SESSION["username"]; ?></p>
+            <p>Welcome <?php echo $_SESSION["username"]; ?></p>
             <P><a href="prontpage.php?logout='1'" style="color: red;">logout</a></P>
         <?php endif ?>
     </div>
