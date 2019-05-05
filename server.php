@@ -7,12 +7,10 @@
 
 function OpenCon(){
 
-    $conn = new mysqli("localhost", "olso", "olso", "webprojekti") or die("connect failed: %s\n". $conn->error);
+    $conn = new mysqli("localhost", "olso", "olso", "webprojekti", 3306) or die("connect failed: %s\n". $conn->error);
 
     return $conn;
-
 }
-
 
     if (isset($_POST["register"])) {
         $username = strip_tags($_POST["username"]);
@@ -20,20 +18,21 @@ function OpenCon(){
         $password_2 = strip_tags($_POST["password_2"]);
 
         if (empty($username)) {
-            array_push($errors, "username is required");
+            array_push($errors, "Username is required");
         }
         if (empty($password_1)) {
-            array_push($errors, "password is required");
+            array_push($errors, "Password is required");
         }
 
         if ($password_1 != $password_2) {
             array_push($errors, "Passwords do not match");
         }
         if(count($errors) == 0) {
-            $sql = "INSERT INTO users (username, password) VALUES ('$username', '$password_1')";
-            mysqli_query($db, $sql);
+            $sql = $db->prepare("INSERT INTO users (username, password) VALUES (?, ?)");
+            $sql->bind_param("ss", $username,$password_1);
+            $sql->execute();
             $_SESSION["username"] = $username;
-            $_SESSION["success"] = "you are now logged in";
+            $_SESSION["success"] = "You are now logged in";
             header("location: prontpage.php");
         }
     }
@@ -49,8 +48,12 @@ function OpenCon(){
         }
 
         if (count($errors) == 0) {
-            $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
-            $result = mysqli_query($db, $query);
+            //$query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+            $sql = $db->prepare("SELECT * FROM users WHERE username=? AND password=?");
+            $sql->bind_param("ss", $username,$password);
+            $sql->execute();
+            $result = $sql->get_result();
+            //$result = mysqli_query($db, $query);
             if (mysqli_num_rows($result) == 1){
                 $_SESSION["username"] = $username;
                 $_SESSION["success"] = "you are now logged in";

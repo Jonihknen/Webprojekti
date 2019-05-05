@@ -6,11 +6,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> title 000000</title>
+    <title>Selainpeli X</title>
+    <link rel="stylesheet" type="text/css" href="css/prontpage.css">
 </head>
 <body>
     <div class="header">
-        <h2> HOME PAGE </h2>
+        <h1> HOME PAGE </h1>
     </div>
 
     <div class="content">
@@ -27,10 +28,42 @@
 
         <?php if (isset($_SESSION["username"])): ?>
             <p>Welcome <?php echo $_SESSION["username"]; ?></p>
-            <P><a href="prontpage.php?logout='1'" style="color: red;">logout</a></P>
         <?php endif ?>
     </div>
 
+    <nav>
+        <ul>
+            <li>Account
+            <ul>
+                <li><a href="game.html">Account settings</a></li>
+                <li><a href="highscores/highscore.php?name=<?php echo ($_SESSION['username'])?>">Highscore</a></li>
+                <li><a href="prontpage.php?logout='1'" style="color: red;">logout</a></li>
+            </ul>
+            </li>
+            <li>Game
+                <ul>
+                    <li><a href="game/game.php">Play the game</a></li>
+                    <li><a href="22.html">Read the rules</a></li>
+                    <li><a href="23.html">Item 2.3</a></li>
+                    <li><a href="24.html">Item 2.4</a></li>
+                </ul>
+            </li>
+            <li><a href="highscores/highscore.php">Highscores</a></li>
+        </ul>
+    </nav>
+<p>fill</p>
+    <p>fill</p>
+    <p>fill</p>
+    <p>fill</p>
+    <p>fill</p>
+    <p>fill</p>
+    <p>fill</p>
+    <p>fill</p>
+    <p>fill</p>
+    <p>fill</p>
+    <p>fill</p>
+    <p>fill</p><p>fill</p>
+    <p>fill</p>
 
 
 </body>
