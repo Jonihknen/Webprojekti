@@ -59,6 +59,7 @@ function userexists($username){
         }
 
         if(count($errors) == 0) {
+            $password_1 = MD5($password_1);
             $sql = $db->prepare("INSERT INTO users (username, password) VALUES (?, ?)");
             $sql->bind_param("ss", $username,$password_1);
             $sql->execute();
@@ -69,8 +70,8 @@ function userexists($username){
 
     }
     if(isset($_POST["login"])){
-        $username = strip_tags($_POST["username"]);
-        $password = strip_tags($_POST["password"]);
+        $username = ($_POST["username"]);
+        $password = MD5($_POST["password"]);
 
         if (empty($username)) {
             array_push($errors, "username is required");
