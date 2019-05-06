@@ -1,28 +1,9 @@
-<?php
-include("../server.php");
-
-if (empty($_SESSION["username"])) {
-    header("location: ../logreg.php");
-} ?>
-<!doctype html>
-<html lang="en"> 
-<head> 
-    <meta charset="UTF-8" />
-    <title>PHASESHOOTER</title>
-    <script src="//cdn.jsdelivr.net/npm/phaser@3.1.1/dist/phaser.js"></script>
-    <style type="text/css">
-        body {
-            margin: 0;
-			text-align: center;
-        }
-    </style>
-</head>
-<body>
 
 <script type="text/javascript">
 
     var config = {
         type: Phaser.AUTO,
+	parent: 'peli',
         width: 1200,
         height: 700,
         physics: {
@@ -696,7 +677,7 @@ function update ()
             }
         };
         var s = "name=" + "<?php echo ($_SESSION["username"])?>" + "&points=" + this.score;
-        xmlhttp.open("POST", "../highscores/highscore.php", true);
+        xmlhttp.open("POST", "highscore.php", true);
         xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
         xmlhttp.send(s);
     }
