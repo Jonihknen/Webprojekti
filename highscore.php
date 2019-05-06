@@ -8,7 +8,7 @@ if (empty($_SESSION["username"])) {
 <html>
 <head>
     <title>Highscores</title>
-    <link rel="stylesheet" type="text/css" href="../css/highscores.css">
+    <link rel="stylesheet" type="text/css" href="css/highscores.css">
 
 </head>
 <body>
@@ -16,17 +16,17 @@ if (empty($_SESSION["username"])) {
 <h1>HIGHSCORES</h1>
 <nav>
     <ul>
-        <li><a href="../prontpage.php">Frontpage</a></li>
+        <li><a href="prontpage.php">Frontpage</a></li>
         <li>Account
             <ul>
-                <li><a href="../game/game.php">Account settings</a></li>
+                <li><a href="game.php">Account settings</a></li>
                 <li><a href="highscore.php?name=<?php echo ($_SESSION['username'])?>">Personal Highscore</a></li>
-                <li><a href="../prontpage.php?logout='1'" style="color: red;">logout</a></li>
+                <li><a href="prontpage.php?logout='1'" style="color: red;">logout</a></li>
             </ul>
         </li>
         <li>Game
             <ul>
-                <li><a href="../game/game.php">Play the game</a></li>
+                <li><a href="game.php">Play the game</a></li>
                 <li><a href="22.html">Read the rules</a></li>
                 <li><a href="23.html">Item 2.3</a></li>
                 <li><a href="24.html">Item 2.4</a></li>

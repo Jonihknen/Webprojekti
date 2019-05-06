@@ -1,4 +1,10 @@
-<!doctype html> 
+<?php
+include("../server.php");
+
+if (empty($_SESSION["username"])) {
+    header("location: ../logreg.php");
+} ?>
+<!doctype html>
 <html lang="en"> 
 <head> 
     <meta charset="UTF-8" />
@@ -102,28 +108,6 @@
         //--------------MAKING THE PLAYER-----------------------------------------------------------------------------------------------------------
         this.player = this.physics.add.sprite(100, 450, 'me').setBounce(0.8).setCollideWorldBounds(true);
         this.physics.add.collider(this.player, platforms);
-        //-----CAMERA--------------------------------------------------------------------------------------------------------------------
-        // this.cameras.main.setSize(1200, 700);
-        // this.cameras.main.startFollow(player);
-        //this.cameras.main.ignore([this.scoreText, this.hitpoints]);
-        //--------------------------------------------------------------------------------------------------------------------------
-        // this.anims.create({  //ANIMATIONS
-        //     key: 'left',
-        //     frames: this.anims.generateFrameNumbers('me', { start: 0, end: 12 }),
-        //     frameRate: 10,
-        //     repeat: -1
-        // });
-        // this.anims.create({
-        //     key: 'turn',
-        //     frames: [ { key: 'me', frame: 0 } ],
-        //     frameRate: 20
-        // });
-        // this.anims.create({
-        //     key: 'right',
-        //     frames: this.anims.generateFrameNumbers('me', { start: 0, end: 12 }),
-        //     frameRate: 10,
-        //     repeat: -1
-        // });
         //----------ARROWKEYS----------------------------------------------------------------------------------------------------------------
         //cursors = this.input.keyboard.createCursorKeys();
         //------------UPTEXTS--------------------------------------------------------------------------------------------------------------
@@ -264,13 +248,6 @@
             }
         };
         this.physics.add.collider(this.player, boss, hitsfromboss, null, this);
-        //-------------BULLET HITTING A WALL----------------------------------------------------------------------------------------------------------
-        // function bulletwall(bullet)
-        // {
-        //     bullet.setActive(false);
-        //     bullet.setVisible(false);
-        // }
-        // this.physics.add.collider(bullets, platforms, bulletwall, null, this);
         //-----LIFE UP-----------------------------------------------------------------------------------------------------
         function lifeup (player, life){
             life.destroy();
@@ -519,9 +496,11 @@ function update ()
             boss.create(1100, 350, 'boss').setVelocity(Phaser.Math.Between(200, 600), 20).setBounce(1).setCollideWorldBounds(true);
             this.bosshp = 10 * this.setdifficulty;
             this.bosshitpoints.setText('BossHP: ' + this.bosshp);
+            this.gamecompleted = 7;
         }
     }
     //Wave 2
+        /*
     else if (this.setdifficulty >= 4 && this.setdifficulty <= 5){
         if (this.timer == 120){enemyloopupper(this.difficulty, this.setdifficulty + 5);}
         if (this.timer == 120){enemylooplower(this.difficulty, this.setdifficulty +5);}
@@ -580,16 +559,17 @@ function update ()
             this.bosshitpoints.setText('BossHP: ' + this.bosshp);
             this.gamecompleted += 1;
         }
-    }
+    }*/
 
 
     //-----START THE WAVES OVER-----
+    /*
     if (this.bossisdead == 1){
         this.timer = 0;
         this.setdifficulty += 1;
         this.bossisdead = 0;
         this.trackselect += 1;
-    }
+    }*/
 
     //MUSIC------------------
     //-----------TRACK 1-----------------
@@ -700,13 +680,27 @@ function update ()
     if (this.timer == 2800 && this.setdifficulty == 8){
         this.speakingtext.setText('GAME FINISHED!');
     }
+
     //BEATING THE GAME-----------------------------------------------------------
     if (this.gamecompleted == 7 && this.bosshp < 1){
+        this.bosshp = 5000;
         console.log('gamefinished')
         this.speakingtext.setText('CONGRATULATIONS MAN');
         this.player.setTint(0xffdd00);
         this.backgroundimage = this.add.image(600, 350, 'gamewin');
+        //MUUTTUJIEN LÄHETYS
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function(){
+            if(this.readyState==4){
+                window.location.href = "highscore.php";
+            }
+        };
+        var s = "name=" + "<?php echo ($_SESSION["username"])?>" + "&points=" + this.score;
+        xmlhttp.open("POST", "../highscores/highscore.php", true);
+        xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        xmlhttp.send(s);
     }
+
 
 
 
