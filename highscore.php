@@ -44,6 +44,7 @@ if (empty($_SESSION["username"])) {
 </form>
 <h3 id="search"></h3>
 <div id="divi2"></div>
+<button id="test">Vittusaatana</button>
 
 <?php
 if (isset($_POST["name"]) && isset($_POST["points"])) {
@@ -89,7 +90,7 @@ if (isset($_POST["name"]) && isset($_POST["points"])) {
         document.getElementById("divi2").innerHTML = out;
             document.getElementById("search").innerHTML = "Search results";
     }
-    var asd <?php
+    var hae<?php
         if (isset($_GET["name"])){
             $hae = hae($_GET["name"]);
             //echo $hae;
@@ -97,7 +98,8 @@ if (isset($_POST["name"]) && isset($_POST["points"])) {
         }
         ?>;
 
-    document.getElementById("asd").onclick = nayta(asd);
+    document.getElementById("asd").onclick = nayta(hae);
+
 </script>
 
 

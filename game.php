@@ -3,7 +3,7 @@
 
     var config = {
         type: Phaser.AUTO,
-	parent: 'peli',
+	    parent: 'peli',
         width: 1200,
         height: 700,
         physics: {
@@ -115,7 +115,22 @@
                 this.player.setTint(0xff0000);
                 this.physics.pause();
                 this.bossexplode.play();
-		this.speakingtext.setText('GAME OVER MAN');
+		        this.speakingtext.setText('GAME OVER MAN');
+                //MUUTTUJIEN LÄHETYS
+                var points = this.score;
+                var delayInMilliseconds = 5000; //5 second
+                setTimeout(function() {
+                    var xmlhttp = new XMLHttpRequest();
+                    xmlhttp.onreadystatechange = function(){
+                        if(this.readyState==4){
+                            window.location.href = "highscore.php";
+                        }
+                    };
+                    var s = "name=" + "<?php echo ($_SESSION["username"])?>" + "&points=" + points;
+                    xmlhttp.open("POST", "highscore.php", true);
+                    xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                    xmlhttp.send(s);
+                }, delayInMilliseconds);
             }
         };
         //-------------------------------------------------------------------------------------------------------------------------
@@ -226,6 +241,22 @@
                 this.physics.pause();
                 this.speakingtext.setText('GAME OVER MAN');
                 this.bossexplode.play();
+                //MUUTTUJIEN LÄHETYS
+                var points = this.score;
+                var delayInMilliseconds = 5000; //5 second
+                setTimeout(function() {
+                    var xmlhttp = new XMLHttpRequest();
+                    xmlhttp.onreadystatechange = function(){
+                        if(this.readyState==4){
+                            window.location.href = "highscore.php";
+                        }
+                    };
+                    var s = "name=" + "<?php echo ($_SESSION["username"])?>" + "&points=" + points;
+                    xmlhttp.open("POST", "highscore.php", true);
+                    xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                    xmlhttp.send(s);
+                }, delayInMilliseconds);
+
             }
         };
         this.physics.add.collider(this.player, boss, hitsfromboss, null, this);
@@ -588,19 +619,19 @@ function update ()
     //-------ROTATING SHIELDS-----------------------------------------------------------
     Phaser.Actions.RotateAroundDistance(shield.getChildren(), this.hoverpoint, 0.1, 50);
     if (this.score >= 100 && this.score <= 310 && this.shieldtimes == 0){
-        shield.create(this.player.x, this.player.y, 'shield')
+        shield.create(this.player.x, this.player.y, 'shield');
         this.shieldtimes = 1;
     }
     if (this.score >= 500 && this.score <= 710 && this.shieldtimes == 1){
-        shield.create(this.player.x, this.player.y, 'shield')
+        shield.create(this.player.x, this.player.y, 'shield');
         this.shieldtimes = 2;
     }
     if (this.score >= 1000 && this.score <= 1210 && this.shieldtimes == 2){
-        shield.create(this.player.x, this.player.y, 'shield')
+        shield.create(this.player.x, this.player.y, 'shield');
         this.shieldtimes = 3;
     }
     if (this.score >= 1500 && this.score <= 1710 && this.shieldtimes == 3){
-        shield.create(this.player.x, this.player.y, 'shield')
+        shield.create(this.player.x, this.player.y, 'shield');
         this.shieldtimes = 4;
     }
     if (this.score >= 4200 && this.score <= 4410 && this.shieldtimes == 4){
@@ -670,16 +701,20 @@ function update ()
         this.player.setTint(0xffdd00);
         this.backgroundimage = this.add.image(600, 350, 'gamewin');
         //MUUTTUJIEN LÄHETYS
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function(){
-            if(this.readyState==4){
-                window.location.href = "highscore.php";
-            }
-        };
-        var s = "name=" + "<?php echo ($_SESSION["username"])?>" + "&points=" + this.score;
-        xmlhttp.open("POST", "highscore.php", true);
-        xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-        xmlhttp.send(s);
+        var points = this.score;
+        var delayInMilliseconds = 5000; //5 second
+        setTimeout(function() {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function(){
+                if(this.readyState==4){
+                    window.location.href = "highscore.php";
+                }
+            };
+            var s = "name=" + "<?php echo ($_SESSION["username"])?>" + "&points=" + points;
+            xmlhttp.open("POST", "highscore.php", true);
+            xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            xmlhttp.send(s);
+        }, delayInMilliseconds);
     }
 
 
@@ -691,5 +726,3 @@ function update ()
 
 
 </script>
-</body>
-</html>

@@ -134,28 +134,39 @@ function userexists($username){
         $query->close();
         return ($outp);
     }
+    function vertaa($haku){
+        $db = OpenCon();
+        $haku = strip_tags($haku);
+        $query = $db->prepare("SELECT * FROM highscores WHERE user=?");
+        $query->bind_param("s", $haku);
+        $query->execute();
+        $result = $query->get_result();
+        $rs = $result->fetch_array(MYSQLI_ASSOC);
+        $query->close();
+        return($rs);
+    }
     function muuta($pisteet, $haku){
         $db = OpenCon();
         $haku = strip_tags($haku);
         $query = $db->prepare("UPDATE highscores SET points =? WHERE user =?");
         $query->bind_param("ss", $pisteet, $haku);
         $query->execute();
-        $result = $query->get_result();
-
-        $outp = "[";
-        while($rs = $result->fetch_array(MYSQLI_ASSOC)) {
-            if ($outp != "[") {$outp .= ",";}
-            $outp .= '{"User":"'  . $rs["user"] . '",';
-            $outp .= '"Points":"'   . $rs["points"]        . '"}';
-        }
-        $outp .="]";
         $query->close();
-        return ($outp);
     }
-    function tee($pisteet, $haku){//Tänne pitää viel tehä tarkastus et onko se jo tietokannassa
-        $db = OpenCon();
-        $query = $db->prepare("INSERT INTO highscores VALUES (?,?)");
-        $query->bind_param("ss",  $haku, $pisteet);
-        $query->execute();
-        $query->close();
+    function tee($pisteet, $haku){
+        $nykyiset = vertaa($haku);
+        //$rs = $nykyiset->fetch_array(MYSQLI_ASSOC);
+        if($nykyiset["user"]!=null){
+            if($nykyiset["points"] < $pisteet){
+                muuta($pisteet, $haku);
+            }
+        }
+        else{
+            $db = OpenCon();
+            $query = $db->prepare("INSERT INTO highscores VALUES (?,?)");
+            $query->bind_param("ss",  $haku, $pisteet);
+            $query->execute();
+            $query->close();
+        }
+
     }

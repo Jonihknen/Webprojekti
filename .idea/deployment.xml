@@ -12,7 +12,7 @@
       <paths name="XAMPP PHP (project level)">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="localhost" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
