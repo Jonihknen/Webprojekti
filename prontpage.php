@@ -1,7 +1,7 @@
 <?php include("server.php");
 
     if (empty($_SESSION["username"])) {
-        header("location: login.php");
+        header("location: logreg.php");
     }?>
 <!DOCTYPE html>
 <html>
