@@ -8,8 +8,10 @@
 <head>
     <title>Selainpeli X</title>
     <link rel="stylesheet" type="text/css" href="css/prontpage.css">
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.1.1/dist/phaser.js"></script>
 </head>
 <body>
+    <?php include("game.php");?>
     <div class="header">
         <h1> HOME PAGE </h1>
     </div>
@@ -30,7 +32,7 @@
             <p>Welcome <?php echo $_SESSION["username"]; ?></p>
         <?php endif ?>
     </div>
-
+<div id="peli" class="peli"></div>
     <nav>
         <ul>
             <li>Account
