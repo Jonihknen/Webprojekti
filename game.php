@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 include("../server.php");
 
@@ -18,11 +19,17 @@ if (empty($_SESSION["username"])) {
     </style>
 </head>
 <body>
+=======
+>>>>>>> 3109c8fe64056bae970bd17c63c85c209ae547ff
 
 <script type="text/javascript">
 
     var config = {
         type: Phaser.AUTO,
+<<<<<<< HEAD
+=======
+	parent: 'peli',
+>>>>>>> 3109c8fe64056bae970bd17c63c85c209ae547ff
         width: 1200,
         height: 700,
         physics: {
@@ -696,7 +703,11 @@ function update ()
             }
         };
         var s = "name=" + "<?php echo ($_SESSION["username"])?>" + "&points=" + this.score;
+<<<<<<< HEAD
         xmlhttp.open("POST", "../highscores/highscore.php", true);
+=======
+        xmlhttp.open("POST", "highscore.php", true);
+>>>>>>> 3109c8fe64056bae970bd17c63c85c209ae547ff
         xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
         xmlhttp.send(s);
     }
@@ -711,4 +722,8 @@ function update ()
 
 </script>
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 3109c8fe64056bae970bd17c63c85c209ae547ff

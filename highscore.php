@@ -1,8 +1,15 @@
 <?php
+<<<<<<< HEAD
 include("../server.php");
 
 if (empty($_SESSION["username"])) {
     header("location: ../logreg.php");
+=======
+include("server.php");
+
+if (empty($_SESSION["username"])) {
+    header("location: logreg.php");
+>>>>>>> 3109c8fe64056bae970bd17c63c85c209ae547ff
 } ?>
 <!DOCTYPE html>
 <html>
@@ -46,6 +53,7 @@ if (empty($_SESSION["username"])) {
 <div id="divi2"></div>
 
 <?php
+<<<<<<< HEAD
     include("highscore_SQL.php");
     $yhteys = new SQL();
     $hae = null;
@@ -54,6 +62,10 @@ if (empty($_SESSION["username"])) {
 if (isset($_POST["name"]) && isset($_POST["points"])) {
     $yhteys->tee(($_POST["points"]), ($_POST["name"]));
     echo "<p>AAAAAAAAAAAAAAAAAAA</p>";
+=======
+if (isset($_POST["name"]) && isset($_POST["points"])) {
+    tee(($_POST["points"]), ($_POST["name"]));
+>>>>>>> 3109c8fe64056bae970bd17c63c85c209ae547ff
 }
 ?>
 <script>
@@ -77,7 +89,11 @@ if (isset($_POST["name"]) && isset($_POST["points"])) {
         document.getElementById("divi").innerHTML = out;
         document.getElementById("divi").style.textAlign = 'center';
     }
+<<<<<<< HEAD
     window.onload = naytaKaikki('<?php echo $yhteys->haeKaikki(); ?>');
+=======
+    window.onload = naytaKaikki('<?php echo haeKaikki(); ?>');
+>>>>>>> 3109c8fe64056bae970bd17c63c85c209ae547ff
 
         function nayta(response) {
         var arr = JSON.parse(response);
@@ -97,7 +113,11 @@ if (isset($_POST["name"]) && isset($_POST["points"])) {
     }
     var asd <?php
         if (isset($_GET["name"])){
+<<<<<<< HEAD
             $hae = $yhteys->hae($_GET["name"]);
+=======
+            $hae = hae($_GET["name"]);
+>>>>>>> 3109c8fe64056bae970bd17c63c85c209ae547ff
             //echo $hae;
             echo "='".$hae."'";
         }
@@ -108,4 +128,8 @@ if (isset($_POST["name"]) && isset($_POST["points"])) {
 
 
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 3109c8fe64056bae970bd17c63c85c209ae547ff
