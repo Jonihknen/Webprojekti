@@ -1,8 +1,8 @@
 <?php
-include("../server.php");
+include("server.php");
 
 if (empty($_SESSION["username"])) {
-    header("location: ../logreg.php");
+    header("location: ../login.php");
 } ?>
 <!DOCTYPE html>
 <html>
@@ -46,14 +46,8 @@ if (empty($_SESSION["username"])) {
 <div id="divi2"></div>
 
 <?php
-    include("highscore_SQL.php");
-    $yhteys = new SQL();
-    $hae = null;
-    //$yhteys->makeConnection();
-    //$yhteys->hae();
 if (isset($_POST["name"]) && isset($_POST["points"])) {
-    $yhteys->tee(($_POST["points"]), ($_POST["name"]));
-    echo "<p>AAAAAAAAAAAAAAAAAAA</p>";
+    tee(($_POST["points"]), ($_POST["name"]));
 }
 ?>
 <script>
@@ -77,7 +71,7 @@ if (isset($_POST["name"]) && isset($_POST["points"])) {
         document.getElementById("divi").innerHTML = out;
         document.getElementById("divi").style.textAlign = 'center';
     }
-    window.onload = naytaKaikki('<?php echo $yhteys->haeKaikki(); ?>');
+    window.onload = naytaKaikki('<?php echo haeKaikki(); ?>');
 
         function nayta(response) {
         var arr = JSON.parse(response);
@@ -97,7 +91,7 @@ if (isset($_POST["name"]) && isset($_POST["points"])) {
     }
     var asd <?php
         if (isset($_GET["name"])){
-            $hae = $yhteys->hae($_GET["name"]);
+            $hae = hae($_GET["name"]);
             //echo $hae;
             echo "='".$hae."'";
         }
