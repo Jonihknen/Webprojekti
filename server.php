@@ -102,3 +102,59 @@ function userexists($username){
         unset($_SESSION["username"]);
         header("location: logreg.php");
     }
+    function haeKaikki(){
+        $db = OpenCon();
+        $result = $db->query("SELECT * FROM highscores");
+
+        $outp = "[";
+        while($rs = $result->fetch_array(MYSQLI_ASSOC)) {
+            if ($outp != "[") {$outp .= ",";}
+            $outp .= '{"User":"'  . $rs["user"] . '",';
+            $outp .= '"Points":"'   . $rs["points"]        . '"}';
+        }
+        $outp .="]";
+        return ($outp);
+    }
+    function hae($haku){
+        $db = OpenCon();
+        $haku = strip_tags($haku);
+        $query = $db->prepare("SELECT * FROM highscores WHERE user=?");
+        $query->bind_param("s", $haku);
+        $query->execute();
+        $result = $query->get_result();
+
+        $outp = "[";
+        while($rs = $result->fetch_array(MYSQLI_ASSOC)) {
+            if ($outp != "[") {$outp .= ",";}
+            $outp .= '{"User":"'  . $rs["user"] . '",';
+            $outp .= '"Points":"'   . $rs["points"]        . '"}';
+        }
+        $outp .="]";
+        $query->close();
+        return ($outp);
+    }
+    function muuta($pisteet, $haku){
+        $db = OpenCon();
+        $haku = strip_tags($haku);
+        $query = $db->prepare("UPDATE highscores SET points =? WHERE user =?");
+        $query->bind_param("ss", $pisteet, $haku);
+        $query->execute();
+        $result = $query->get_result();
+
+        $outp = "[";
+        while($rs = $result->fetch_array(MYSQLI_ASSOC)) {
+            if ($outp != "[") {$outp .= ",";}
+            $outp .= '{"User":"'  . $rs["user"] . '",';
+            $outp .= '"Points":"'   . $rs["points"]        . '"}';
+        }
+        $outp .="]";
+        $query->close();
+        return ($outp);
+    }
+    function tee($pisteet, $haku){//Tänne pitää viel tehä tarkastus et onko se jo tietokannassa
+        $db = OpenCon();
+        $query = $db->prepare("INSERT INTO highscores VALUES (?,?)");
+        $query->bind_param("ss",  $haku, $pisteet);
+        $query->execute();
+        $query->close();
+    }
