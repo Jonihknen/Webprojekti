@@ -1,0 +1,44 @@
+
+body {
+    text-align: center;
+}
+div {
+    text-align: center;
+}
+table {
+    margin-left:auto;
+    margin-right:auto;
+}
+nav {
+    position: absolute;
+    top: 110px;
+    left: 10px;
+    width: 50px;
+}
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    float: left;
+    text-align: center;
+    top: 120px;
+    left: 10px;
+    width: 100px;
+}
+
+nav ul li ul {
+    visibility: hidden;
+}
+
+nav ul li ul li {
+    list-style: square inside;
+    float: left;
+    margin-left: -15px;
+    width: 150px;
+    text-align: left;
+}
+
+nav ul li:hover > ul {
+    visibility:visible;
+}
