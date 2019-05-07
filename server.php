@@ -7,7 +7,7 @@
 
 function OpenCon(){
 
-    $conn = new mysqli("localhost", "aarop", "kakka", "webprojekti", 3305) or die("connect failed: %s\n". $conn->error);
+    $conn = new mysqli("localhost", "olso", "olso", "webprojekti", 3306) or die("connect failed: %s\n". $conn->error);
 
     return $conn;
 }
