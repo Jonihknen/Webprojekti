@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb1201b1-925f-4808-b39e-b45d3158f1be" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game.php" beforeDir="false" afterPath="$PROJECT_DIR$/game.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/highscore.php" beforeDir="false" afterPath="$PROJECT_DIR$/highscore.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prontpage.php" beforeDir="false" afterPath="$PROJECT_DIR$/prontpage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.php" beforeDir="false" afterPath="$PROJECT_DIR$/server.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,8 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/logreg.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="18" selection-end-column="39" />
+            <state relative-caret-position="-119">
+              <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -62,8 +64,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1588">
-              <caret line="107" column="42" selection-start-line="107" selection-start-column="42" selection-end-line="107" selection-end-column="42" />
+            <state relative-caret-position="1931">
+              <caret line="129" column="70" selection-start-line="129" selection-start-column="70" selection-end-line="129" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -71,8 +73,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/highscore.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1564">
-              <caret line="92" column="11" selection-start-line="92" selection-start-column="11" selection-end-line="92" selection-end-column="11" />
+            <state relative-caret-position="276">
+              <caret line="68" column="39" lean-forward="true" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="39" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#li#1;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/prontpage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="51" column="73" lean-forward="true" selection-start-line="51" selection-start-column="73" selection-end-line="51" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/account.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -80,8 +103,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2635">
-              <caret line="155" column="34" selection-start-line="155" selection-start-column="34" selection-end-line="155" selection-end-column="34" />
+            <state relative-caret-position="55">
+              <caret line="100" column="32" selection-start-line="100" selection-start-column="32" selection-end-line="100" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -115,7 +138,6 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/register.php" />
         <option value="$PROJECT_DIR$/logreg.css" />
-        <option value="$PROJECT_DIR$/prontpage.php" />
         <option value="$PROJECT_DIR$/css/prontpage.css" />
         <option value="$PROJECT_DIR$/game/game.html" />
         <option value="$PROJECT_DIR$/highscores/highscore_SQL.php" />
@@ -128,7 +150,9 @@
         <option value="$PROJECT_DIR$/logreg.php" />
         <option value="$PROJECT_DIR$/js/logreg.js" />
         <option value="$PROJECT_DIR$/highscore.php" />
+        <option value="$PROJECT_DIR$/account.php" />
         <option value="$PROJECT_DIR$/server.php" />
+        <option value="$PROJECT_DIR$/prontpage.php" />
         <option value="$PROJECT_DIR$/game.php" />
       </list>
     </option>
@@ -138,11 +162,10 @@
       <path value="C:/xampp/php/" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-473" />
-    <option name="y" value="-14" />
-    <option name="width" value="1660" />
-    <option name="height" value="975" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="1165" />
+    <option name="width" value="764" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -170,7 +193,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="C:/HTML/Koulutehtavat/tehtävät/labs/09 Single-Page Applications/lecture_notes.html" />
+    <property name="last_opened_file_path" value="$USER_HOME$/PhpstormProjects/205CDE" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -232,7 +255,7 @@
       <workItem from="1557136588468" duration="796000" />
       <workItem from="1557155491687" duration="4277000" />
       <workItem from="1557170161162" duration="3855000" />
-      <workItem from="1557217358164" duration="6619000" />
+      <workItem from="1557217358164" duration="11351000" />
     </task>
     <task id="LOCAL-00001" summary="salasana salainen">
       <created>1557134945673</created>
@@ -245,7 +268,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83323000" />
+    <option name="totallyTimeSpent" value="88055000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -373,38 +396,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/prontpage.php">
+    <entry file="file://$PROJECT_DIR$/server.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logreg.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="18" selection-end-column="39" />
+        <state relative-caret-position="55">
+          <caret line="100" column="32" selection-start-line="100" selection-start-column="32" selection-end-line="100" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/highscore.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="92" column="11" selection-start-line="92" selection-start-column="11" selection-end-line="92" selection-end-column="11" />
+        <state relative-caret-position="276">
+          <caret line="68" column="39" lean-forward="true" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="39" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#li#1;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.php">
+    <entry file="file://$PROJECT_DIR$/logreg.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2635">
-          <caret line="155" column="34" selection-start-line="155" selection-start-column="34" selection-end-line="155" selection-end-column="34" />
+        <state relative-caret-position="-119">
+          <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prontpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="51" column="73" lean-forward="true" selection-start-line="51" selection-start-column="73" selection-end-line="51" selection-end-column="73" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1588">
-          <caret line="107" column="42" selection-start-line="107" selection-start-column="42" selection-end-line="107" selection-end-column="42" />
+        <state relative-caret-position="1931">
+          <caret line="129" column="70" selection-start-line="129" selection-start-column="70" selection-end-line="129" selection-end-column="70" />
         </state>
       </provider>
     </entry>

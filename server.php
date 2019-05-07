@@ -25,7 +25,7 @@ function userexists($username){
         return false;
     }
 }
-
+    //REGISTERING USER
     if (isset($_POST["register"])) {
         $username = strip_tags($_POST["username"]);
         $password_1 = strip_tags($_POST["password"]);
@@ -69,6 +69,7 @@ function userexists($username){
         }
 
     }
+    //LOGGING IN
     if(isset($_POST["login"])){
         $username = ($_POST["username"]);
         $password = MD5($_POST["password"]);
@@ -93,6 +94,28 @@ function userexists($username){
                 header("Location: prontpage.php");
             }else{
                 array_push($errors, "wrong username or password");
+            }
+        }
+    }
+    //DELETING USER
+    if(isset($_POST["delete"])){
+        $name = ($_SESSION["username"]);
+        $password = MD5($_POST["delete"]);
+        if (empty($password)) {
+            array_push($errors, "password is required");
+        }
+        if (count($errors) == 0) {
+            $sql = $db->prepare("SELECT * FROM users WHERE username=? AND password=?");
+            $sql->bind_param("ss", $name,$password);
+            $sql->execute();
+            $result = $sql->get_result();
+            if (mysqli_num_rows($result) == 1){
+                $sql = $db->prepare("DELETE FROM users WHERE username=? AND password=?");
+                $sql->bind_param("ss", $name,$password);
+                $sql->execute();
+                header("Location: prontpage.php?logout='1'");
+            }else{
+                array_push($errors, "wrong password");
             }
         }
     }

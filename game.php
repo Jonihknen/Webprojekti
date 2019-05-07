@@ -127,7 +127,7 @@
                         }
                     };
                     var s = "name=" + "<?php echo ($_SESSION["username"])?>" + "&points=" + points;
-                    xmlhttp.open("POST", "highscore.php", true);
+                    xmlhttp.open("POST", "highscore.php?name=", true);
                     xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
                     xmlhttp.send(s);
                 }, delayInMilliseconds);
@@ -252,7 +252,7 @@
                         }
                     };
                     var s = "name=" + "<?php echo ($_SESSION["username"])?>" + "&points=" + points;
-                    xmlhttp.open("POST", "highscore.php", true);
+                    xmlhttp.open("POST", "highscore.php?name=", true);
                     xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
                     xmlhttp.send(s);
                 }, delayInMilliseconds);
@@ -658,7 +658,7 @@ function update ()
         this.speakingtext.setText('');
     }
     if (this.timer == 10 && this.setdifficulty ==2){
-        this.speakingtext.setText('WASD to move, Space to shoot!');
+        this.speakingtext.setText('WASD to move \nSpace to shoot!');
     }
     if (this.timer == 10 && this.setdifficulty == 3){
         this.speakingtext.setText('Pew Pew Pew!');
@@ -715,7 +715,7 @@ function update ()
                 }
             };
             var s = "name=" + "<?php echo ($_SESSION["username"])?>" + "&points=" + points;
-            xmlhttp.open("POST", "highscore.php", true);
+            xmlhttp.open("POST", "highscore.php?name=", true);
             xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
             xmlhttp.send(s);
         }, delayInMilliseconds);
