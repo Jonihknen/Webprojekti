@@ -4,8 +4,8 @@
     var config = {
         type: Phaser.AUTO,
 	    parent: 'peli',
-        width: 1200,
-        height: 700,
+        width: 1000,
+        height: 600,
         physics: {
         default: 'arcade',
         arcade: {
@@ -78,27 +78,27 @@
         this.backgroundimage = this.add.image(600, 350, 'wall');
         //-------------WALLS AND UPBAR------------------------------------------------------------------------------------------------------------
         platforms = this.physics.add.staticGroup();
-        platforms.create(100, 720, 'ground');
-        platforms.create(735, 720, 'ground');
-        platforms.create(1200, 720, 'ground');
+        platforms.create(100, 610, 'ground');
+        platforms.create(735, 610, 'ground');
+        platforms.create(1000, 610, 'ground');
         platforms.create(250, 28, 'upbar');
         platforms.create(850, 28, 'upbar');
-        platforms.create(1450, 28, 'upbar');
-        platforms.create(1250, 350, 'backwall').setScale(2).refreshBody();
+        platforms.create(1250, 28, 'upbar');
+        platforms.create(1100, 350, 'backwall').setScale(2).refreshBody();
         //platforms.create(-50, 350, 'backwall').setScale(2).refreshBody();
         //--------------MAKING THE PLAYER-----------------------------------------------------------------------------------------------------------
-        this.player = this.physics.add.sprite(100, 450, 'me').setBounce(0.8).setCollideWorldBounds(true);
+        this.player = this.physics.add.sprite(100, 400, 'me').setBounce(0.8).setCollideWorldBounds(true);
         this.physics.add.collider(this.player, platforms);
         //----------ARROWKEYS----------------------------------------------------------------------------------------------------------------
         //cursors = this.input.keyboard.createCursorKeys();
         //------------UPTEXTS--------------------------------------------------------------------------------------------------------------
         this.scoreText = this.add.text(16, 6, 'Points: 0', { fontSize: '32px', fill: '#ff0' });
         this.scoreText.setStroke('#0381d1', 16).setShadow(2, 2, "#333333", 2, true, true);
-        this.hitpoints = this.add.text(300, 6, 'Hitpoints: 3', { fontSize: '42px', fill: '#ff0000' });
+        this.hitpoints = this.add.text(300, 6, 'HP: 3', { fontSize: '42px', fill: '#ff0000' });
         this.hitpoints.setStroke('#0381d1', 16).setShadow(2, 2, "#333333", 2, true, true);
-        this.bosshitpoints = this.add.text(850, 6, 'BossHP: 0', { fontSize: '32px', fill: '#ff0' });
+        this.bosshitpoints = this.add.text(650, 6, 'BossHP: 0', { fontSize: '32px', fill: '#ff0' });
         this.bosshitpoints.setStroke('#0381d1', 16).setShadow(2, 2, "#333333", 2, true, true);
-        this.speakingtext = this.add.text(400, 200, 'PHASESHOOTER', { fontSize: '42px', fill: '#ff0' });
+        this.speakingtext = this.add.text(200, 200, 'PHASESHOOTER', { fontSize: '42px', fill: '#ff0' });
         //-----------PLAYER GETTING HIT BY NORMAL ENEMY---------------------------------------------------------------------------------------------------------------
         function hit (player, enemy)
         {
@@ -115,9 +115,9 @@
                 this.player.setTint(0xff0000);
                 this.physics.pause();
                 this.bossexplode.play();
-		        this.speakingtext.setText('GAME OVER MAN');
-                //MUUTTUJIEN LÄHETYS
                 var points = this.score;
+                this.speakingtext.setText('DEATH! YOU SCORED '+points+' POINTS!');
+                //MUUTTUJIEN LÄHETYS
                 var delayInMilliseconds = 5000; //5 second
                 setTimeout(function() {
                     var xmlhttp = new XMLHttpRequest();
@@ -238,11 +238,11 @@
             }
             if(this.hp < 1) {
                 player.setTint(0xff0000);
+                var points = this.score;
                 this.physics.pause();
-                this.speakingtext.setText('GAME OVER MAN');
+                this.speakingtext.setText('DEATH!! YOU SCORED '+points+' POINTS!');
                 this.bossexplode.play();
                 //MUUTTUJIEN LÄHETYS
-                var points = this.score;
                 var delayInMilliseconds = 5000; //5 second
                 setTimeout(function() {
                     var xmlhttp = new XMLHttpRequest();
@@ -278,6 +278,8 @@
             shield.destroy();
             enemy.destroy();
             this.enemyhitsound.play();
+            this.score += 15;
+            this.scoreText.setText('Points: ' + this.score);
         }
         shield = this.physics.add.group();
         this.physics.add.overlap(shield, enemies, shieldhit, null, this);
@@ -292,7 +294,7 @@
                 boss.setActive(false);
                 boss.setVisible(false);
                 boss.disableBody(true, true);
-                this.score += 100;
+                this.score += 150;
                 this.bosshitpoints.setText("He's dead Jim.");
                 this.scoreText.setText('Points: ' + this.score);
                 this.musiclove.stop();
@@ -312,6 +314,7 @@
         this.DKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);
 
         this.resetkey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.R);
+        //this.pausekey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.P);
 
         //-----------MUSIC VARIABLES----------------
         this.musiclove =  this.sound.add('love');
@@ -327,6 +330,14 @@
 function update ()
 {
     //-----------------------------MOVEMENT-------------------
+  /*  if(this.pausekey.isDown){
+        //this.scene.launch('sceneB');
+        this.musiclove.stop();
+        this.musicmega.stop();
+        this.musicsea.stop();
+        this.scene.pause();
+    }*/
+
     if (this.AKey.isDown)
     {
         this.player.setVelocityX(-255);
@@ -390,13 +401,13 @@ function update ()
                 if (enem1 == 0){skin = 'enemy'; }
                 else if (enem1 == 1){skin = 'enemy2'; }
                 else if (enem1 == 2){skin = 'enemy3'; }
-                enemies.create(1150, 95, skin).setInteractive().setVelocity(-200, 0).setBounce(1);
-                enemies.create(1150, 200, skin).setInteractive().setVelocity(-200, 0).setBounce(1);
-                enemies.create(1150, 300, skin).setInteractive().setVelocity(-200, 0).setBounce(1);
-                enemies.create(1150, 400, skin).setInteractive().setVelocity(-200, 0).setBounce(1);
-                enemies.create(1150, 500, skin).setInteractive().setVelocity(-200, 0).setBounce(1);
-                enemies.create(1150, 600, skin).setInteractive().setVelocity(-200, 0).setBounce(1);
-                enemies.create(1150, 675, skin).setInteractive().setVelocity(-200, 0).setBounce(1);        
+                enemies.create(1150, 95, skin).setInteractive().setVelocity(-250, 0).setBounce(1);
+                enemies.create(1150, 200, skin).setInteractive().setVelocity(-250, 0).setBounce(1);
+                enemies.create(1150, 300, skin).setInteractive().setVelocity(-250, 0).setBounce(1);
+                enemies.create(1150, 400, skin).setInteractive().setVelocity(-250, 0).setBounce(1);
+                enemies.create(1150, 500, skin).setInteractive().setVelocity(-250, 0).setBounce(1);
+                enemies.create(1150, 550, skin).setInteractive().setVelocity(-250, 0).setBounce(1);
+                enemies.create(1150, 600, skin).setInteractive().setVelocity(-250, 0).setBounce(1);
                 i += 1;                    
                 if (i < a) {           
                     setTimeout(enemylooplines(i, a), 300);            
@@ -411,13 +422,13 @@ function update ()
                 else if (enem1 == 1){skin = 'enemy2'; }
                 else if (enem1 == 2){skin = 'enemy3'; }
                    
-                enemies.create(1150, 100, skin).setInteractive().setVelocity(-200, 50).setBounce(1);
-                enemies.create(1150, 200, skin).setInteractive().setVelocity(-200, 25).setBounce(1);
-                enemies.create(1150, 300, skin).setInteractive().setVelocity(-200, 13).setBounce(1);
-                enemies.create(1150, 400, skin).setInteractive().setVelocity(-200, 0).setBounce(1);
-                enemies.create(1150, 500, skin).setInteractive().setVelocity(-200, -13).setBounce(1);
-                enemies.create(1150, 600, skin).setInteractive().setVelocity(-200, -25).setBounce(1);
-                enemies.create(1150, 675, skin).setInteractive().setVelocity(-200, -50).setBounce(1);  
+                enemies.create(1000, 95, skin).setInteractive().setVelocity(-200, 50).setBounce(1);
+                enemies.create(1000, 150, skin).setInteractive().setVelocity(-200, 25).setBounce(1);
+                enemies.create(1000, 275, skin).setInteractive().setVelocity(-200, 13).setBounce(1);
+                enemies.create(1000, 350, skin).setInteractive().setVelocity(-200, 0).setBounce(1);
+                enemies.create(1000, 425, skin).setInteractive().setVelocity(-200, -13).setBounce(1);
+                enemies.create(1000, 500, skin).setInteractive().setVelocity(-200, -25).setBounce(1);
+                enemies.create(1000, 550, skin).setInteractive().setVelocity(-200, -50).setBounce(1);
                 i += 1;                    
                 if (i < a) {           
                     setTimeout(enemyloop(i, a), 300);            
@@ -431,7 +442,7 @@ function update ()
                 if (enem1 == 0){skin = 'enemy'; }
                 else if (enem1 == 1){skin = 'enemy2'; }
                 else if (enem1 == 2){skin = 'enemy3'; }
-                enemies.create(1150, 100, skin).setInteractive().setVelocity(-200, 0).setBounce(1);
+                enemies.create(1000, 100, skin).setInteractive().setVelocity(-200, 0).setBounce(1);
                 i += 1;                    
             if (i < a) {           
                 setTimeout(enemyloopupper(i, a), 300);            
@@ -445,7 +456,7 @@ function update ()
                 if (enem1 == 0){skin = 'enemy'; }
                 else if (enem1 == 1){skin = 'enemy2'; }
                 else if (enem1 == 2){skin = 'enemy3'; }
-                enemies.create(1150, 666, skin).setInteractive().setVelocity(-200, 0).setBounce(1);
+                enemies.create(1000, 666, skin).setInteractive().setVelocity(-200, 0).setBounce(1);
                 i += 1;                    
             if (i < a) {           
                 setTimeout(enemylooplower(i, a), 300);            
@@ -460,12 +471,12 @@ function update ()
                 else if (enem1 == 1){skin = 'enemy2'; }
                 else if (enem1 == 2){skin = 'enemy3'; }
                 enemies.create(1150, 100, skin).setInteractive().setVelocity(-200, 150).setBounce(1);
-                enemies.create(1150, 200, skin).setInteractive().setVelocity(-200, 150).setBounce(1);
-                enemies.create(1150, 300, skin).setInteractive().setVelocity(-200, 150).setBounce(1);
-                enemies.create(1150, 400, skin).setInteractive().setVelocity(-200, 0).setBounce(1);
+                enemies.create(1150, 175, skin).setInteractive().setVelocity(-200, 150).setBounce(1);
+                enemies.create(1150, 250, skin).setInteractive().setVelocity(-200, 150).setBounce(1);
+                enemies.create(1150, 325, skin).setInteractive().setVelocity(-200, 0).setBounce(1);
+                enemies.create(1150, 475, skin).setInteractive().setVelocity(-200, -150).setBounce(1);
                 enemies.create(1150, 500, skin).setInteractive().setVelocity(-200, -150).setBounce(1);
-                enemies.create(1150, 600, skin).setInteractive().setVelocity(-200, -150).setBounce(1);
-                enemies.create(1150, 675, skin).setInteractive().setVelocity(-200, -150).setBounce(1);
+                enemies.create(1150, 550, skin).setInteractive().setVelocity(-200, -150).setBounce(1);
                 i += 1;                    
             if (i < a) {           
                 setTimeout(enemyloopzigzag(i, a), 300);            
@@ -483,7 +494,7 @@ function update ()
                 enemies.create(1150, 250, skin).setInteractive().setVelocity(Phaser.Math.Between(-600, -150), (15, 200)).setBounce(1);
                 enemies.create(1150, 350, skin).setInteractive().setVelocity(Phaser.Math.Between(-600, -150), 0).setBounce(1);
                 enemies.create(1150, 500, skin).setInteractive().setVelocity(Phaser.Math.Between(-600, -150), (-15, -200)).setBounce(1);
-                enemies.create(1150, 650, skin).setInteractive().setVelocity(Phaser.Math.Between(-600, -150), (-25, -500)).setBounce(1);
+                enemies.create(1150, 550, skin).setInteractive().setVelocity(Phaser.Math.Between(-600, -150), (-25, -500)).setBounce(1);
                 i += 1;                    
             if (i < a) {           
                 setTimeout(enemylooprandom(i, a), 300);            
@@ -505,14 +516,14 @@ function update ()
         if (this.timer == 2100){enemylooprandom(this.difficulty, this.setdifficulty);}
         
         if (this.timer == 2280){
-            boss.create(1100, 350, 'boss').setVelocity(Phaser.Math.Between(200, 600), 20).setBounce(1).setCollideWorldBounds(true);
+            boss.create(1000, 350, 'boss').setVelocity(Phaser.Math.Between(300, 700), 20).setBounce(1).setCollideWorldBounds(true);
             this.bosshp = 10 * this.setdifficulty;
             this.bosshitpoints.setText('BossHP: ' + this.bosshp);
-            this.gamecompleted = 7;
+            this.gamecompleted += 1;
         }
     }
     //Wave 2
-        /*
+
     else if (this.setdifficulty >= 4 && this.setdifficulty <= 5){
         if (this.timer == 120){enemyloopupper(this.difficulty, this.setdifficulty + 5);}
         if (this.timer == 120){enemylooplower(this.difficulty, this.setdifficulty +5);}
@@ -571,17 +582,17 @@ function update ()
             this.bosshitpoints.setText('BossHP: ' + this.bosshp);
             this.gamecompleted += 1;
         }
-    }*/
+    }
 
 
     //-----START THE WAVES OVER-----
-    /*
+
     if (this.bossisdead == 1){
         this.timer = 0;
         this.setdifficulty += 1;
         this.bossisdead = 0;
         this.trackselect += 1;
-    }*/
+    }
 
     //MUSIC------------------
     //-----------TRACK 1-----------------
@@ -614,7 +625,7 @@ function update ()
 
     //---------LIVES------------------------------------------------------
     if (this.timer == 300 || this.timer == 1300 || this.timer == 2200 || this.timer == 5000 || this.timer == 7000){
-        life.create(1150, (Phaser.Math.Between(100, 650)), 'life').setInteractive().setVelocityX(Phaser.Math.Between(-500, -100)).setBounce(1);
+        life.create(1000, (Phaser.Math.Between(100, 650)), 'life').setInteractive().setVelocityX(Phaser.Math.Between(-500, -100)).setBounce(1);
     }
     //-------ROTATING SHIELDS-----------------------------------------------------------
     Phaser.Actions.RotateAroundDistance(shield.getChildren(), this.hoverpoint, 0.1, 50);
@@ -647,7 +658,7 @@ function update ()
         this.speakingtext.setText('');
     }
     if (this.timer == 10 && this.setdifficulty ==2){
-        this.speakingtext.setText('DEFEND YOURSELF');
+        this.speakingtext.setText('WASD to move, Space to shoot!');
     }
     if (this.timer == 10 && this.setdifficulty == 3){
         this.speakingtext.setText('Pew Pew Pew!');
@@ -659,29 +670,30 @@ function update ()
         this.speakingtext.setText('Time to get SERIOUS!');
     }
     if (this.timer == 10 && this.setdifficulty == 6){
-        this.speakingtext.setText('Second last wave!');
+        this.speakingtext.setText("You're almost there!!");
     }
     if (this.timer == 10 && this.setdifficulty == 7){
-        this.speakingtext.setText('FINAL ROUND!');
+        this.speakingtext.setText('FINAL WAVES!');
     }
     if (this.timer == 10 && this.setdifficulty == 8){
-        this.speakingtext.setText('HEYOO YOU DID IT M8');
+        this.speakingtext.setText('HEYOO YOU BEAT THE GAME M8');
     }
     if (this.timer == 130 && this.setdifficulty == 8){
-        this.speakingtext.setText('Nice moves!');
+        this.speakingtext.setText("I can't believe you've done this");
     }
     if (this.timer == 460 && this.setdifficulty == 8){
         this.speakingtext.setText('What now?');
     }
     if (this.timer == 800 && this.setdifficulty == 8){
-        this.speakingtext.setText('R to restart...');
+        this.speakingtext.setText('Maybe play again..?');
     }
-    if (this.timer == 1200 && this.setdifficulty == 8){
+    if (this.timer == 900 && this.setdifficulty == 8){
         this.speakingtext.setText('You know you want to');
     }
-    if (this.timer == 1600 && this.setdifficulty == 8){
+    if (this.timer == 1500 && this.setdifficulty == 8){
         this.speakingtext.setText('WATCH OUT!');
-        enemies.create(1100, 350, 'finalboss').setInteractive().setVelocity(Phaser.Math.Between(-300, -50), 0).setBounce(1);
+        this.bosshp = 1;
+        enemies.create(1000, 350, 'finalboss').setInteractive().setVelocity(Phaser.Math.Between(-300, -50), 0).setBounce(1);
     }
     if (this.timer == 2000 && this.setdifficulty == 8){
         this.speakingtext.setText('That bastard was still alive!');
@@ -690,18 +702,38 @@ function update ()
         this.speakingtext.setText("OK now the games's over");
     }
     if (this.timer == 2800 && this.setdifficulty == 8){
-        this.speakingtext.setText('GAME FINISHED!');
+        this.speakingtext.setText('CONGRATULATIONS! YOU SCORED '+points+' POINTS!');
+        var points = this.score;
+        if(this.hitpoint>0){
+            points = points*this.score;
+        }
+        var delayInMilliseconds = 5000; //5 second
+        setTimeout(function() {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function(){
+                if(this.readyState==4){
+                    window.location.href = "highscore.php";
+                }
+            };
+            var s = "name=" + "<?php echo ($_SESSION["username"])?>" + "&points=" + points;
+            xmlhttp.open("POST", "highscore.php", true);
+            xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            xmlhttp.send(s);
+        }, delayInMilliseconds);
     }
 
     //BEATING THE GAME-----------------------------------------------------------
     if (this.gamecompleted == 7 && this.bosshp < 1){
+        var points = this.score;
+        if(this.hitpoint>0){
+            points = points*this.score;
+        }
         this.bosshp = 5000;
-        console.log('gamefinished')
-        this.speakingtext.setText('CONGRATULATIONS MAN');
+        console.log('gamefinished');
+        this.speakingtext.setText('CONGRATULATIONS! YOU SCORED '+points+' POINTS!');
         this.player.setTint(0xffdd00);
         this.backgroundimage = this.add.image(600, 350, 'gamewin');
         //MUUTTUJIEN LÄHETYS
-        var points = this.score;
         var delayInMilliseconds = 5000; //5 second
         setTimeout(function() {
             var xmlhttp = new XMLHttpRequest();
