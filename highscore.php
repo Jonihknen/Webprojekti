@@ -19,17 +19,9 @@ if (empty($_SESSION["username"])) {
         <li><a href="prontpage.php">Frontpage</a></li>
         <li>Account
             <ul>
-                <li><a href="game.php">Account settings</a></li>
+                <li><a href="account.php">Account settings</a></li>
                 <li><a href="highscore.php?name=<?php echo ($_SESSION['username'])?>">Personal Highscore</a></li>
                 <li><a href="prontpage.php?logout='1'" style="color: red;">logout</a></li>
-            </ul>
-        </li>
-        <li>Game
-            <ul>
-                <li><a href="game.php">Play the game</a></li>
-                <li><a href="22.html">Read the rules</a></li>
-                <li><a href="23.html">Item 2.3</a></li>
-                <li><a href="24.html">Item 2.4</a></li>
             </ul>
         </li>
         <li><a href="highscore.php">Highscores</a></li>
@@ -44,7 +36,6 @@ if (empty($_SESSION["username"])) {
 </form>
 <h3 id="search"></h3>
 <div id="divi2"></div>
-<button id="test">Vittusaatana</button>
 
 <?php
 if (isset($_POST["name"]) && isset($_POST["points"])) {
