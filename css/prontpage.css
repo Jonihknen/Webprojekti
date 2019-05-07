@@ -12,11 +12,13 @@ h1 p {
 nav {
     position: absolute;
     top: 110px;
-    left: 10px;
+    left: -45px;
     width: 50px;
+
 }
 nav ul {
     list-style: none;
+
 }
 
 nav ul li {
@@ -41,4 +43,29 @@ nav ul li ul li {
 
 nav ul li:hover > ul {
     visibility:visible;
+}
+
+.peli{
+    display: inline-block;
+    position: absolute;
+    left: 16%;
+
+
+
+}
+.valikko {
+
+}
+
+.content {
+    font-family: Impact, Charcoal, sans-serif;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    border-radius: 0px 0px 0px 10px;
+    text-align: center;
+    background: #5F9EA0;
+    width: 140px;
 }

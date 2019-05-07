@@ -9,9 +9,15 @@
     <title>Selainpeli X</title>
     <link rel="stylesheet" type="text/css" href="css/prontpage.css">
     <script src="//cdn.jsdelivr.net/npm/phaser@3.1.1/dist/phaser.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
+
 <body>
-    <?php include("game.php");?>
+
+
+<?php include("game.php");?>
+
     <div class="header">
         <h1> HOME PAGE </h1>
     </div>
@@ -29,30 +35,33 @@
         <?php endif ?>
 
         <?php if (isset($_SESSION["username"])): ?>
-            <p>Welcome <?php echo $_SESSION["username"]; ?></p>
+            <p><?php echo $_SESSION["username"]; ?></p>
+            <a href="prontpage.php?logout='1'" style="color: red;">logout</a>
         <?php endif ?>
     </div>
 <div id="peli" class="peli"></div>
+<div id="valikko" class="valikko">
     <nav>
         <ul>
             <li>Account
             <ul>
                 <li><a href="account.php">Account settings</a></li>
                 <li><a href="highscore.php?name=<?php echo ($_SESSION['username'])?>">Personal Highscore</a></li>
-                <li><a href="prontpage.php?logout='1'" style="color: red;">logout</a></li>
             </ul>
             </li>
             <li><a href="highscore.php?name=">Highscores</a></li>
         </ul>
     </nav>
+</div>
+
     <h3>RULES</h3>
 <p>WASD to move the player</p>
 <p>Spacebar to shoot</p>
 <p>Get points for killing enemies. Collect berries to get more hp. Shieldkills give extra points.</p>
 <p>You can poke enemies with your mouse but it doesn't do anything...</p>
 
-
 </body>
+
 
 
 </html>
