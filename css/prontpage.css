@@ -47,11 +47,8 @@ nav ul li:hover > ul {
 
 .peli{
     display: inline-block;
-    position: absolute;
+    position: static;
     left: 16%;
-
-
-
 }
 .valikko {
 

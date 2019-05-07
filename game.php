@@ -625,7 +625,7 @@ function update ()
 
     //---------LIVES------------------------------------------------------
     if (this.timer == 300 || this.timer == 1300 || this.timer == 2200 || this.timer == 5000 || this.timer == 7000){
-        life.create(1000, (Phaser.Math.Between(100, 650)), 'life').setInteractive().setVelocityX(Phaser.Math.Between(-500, -100)).setBounce(1);
+        life.create(900, (Phaser.Math.Between(100, 650)), 'life').setInteractive().setVelocityX(Phaser.Math.Between(-500, -100)).setBounce(1);
     }
     //-------ROTATING SHIELDS-----------------------------------------------------------
     Phaser.Actions.RotateAroundDistance(shield.getChildren(), this.hoverpoint, 0.1, 50);
