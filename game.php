@@ -105,7 +105,7 @@
             if (this.nohits < 1){
                 this.hp -= 1;
                 this.nohits = 60;
-                this.hitpoints.setText('Hitpoints: ' + this.hp);
+                this.hitpoints.setText('HP: ' + this.hp);
                 enemy.setActive(false);
                 enemy.setVisible(false);
                 enemy.disableBody(true, true);
@@ -116,7 +116,7 @@
                 this.physics.pause();
                 this.bossexplode.play();
                 var points = this.score;
-                this.speakingtext.setText('DEATH! YOU SCORED '+points+' POINTS!');
+                this.speakingtext.setText('DEATH! \nYOU SCORED '+points+' POINTS!');
                 //MUUTTUJIEN LÄHETYS
                 var delayInMilliseconds = 5000; //5 second
                 setTimeout(function() {
@@ -232,7 +232,7 @@
             if (this.nohits < 1){
                 this.hp -= 2;
                 this.nohits = 60;
-                this.hitpoints.setText('Hitpoints: ' + this.hp);
+                this.hitpoints.setText('HP: ' + this.hp);
                 boss.setVelocity(Phaser.Math.Between(200, 800), (-200, 200));
                 this.gettinghitsound.play();
             }
@@ -240,7 +240,7 @@
                 player.setTint(0xff0000);
                 var points = this.score;
                 this.physics.pause();
-                this.speakingtext.setText('DEATH!! YOU SCORED '+points+' POINTS!');
+                this.speakingtext.setText('DEATH!! \nYOU SCORED '+points+' POINTS!');
                 this.bossexplode.play();
                 //MUUTTUJIEN LÄHETYS
                 var delayInMilliseconds = 5000; //5 second
@@ -264,7 +264,7 @@
         function lifeup (player, life){
             life.destroy();
             this.hp += 1;
-            this.hitpoints.setText('Hitpoints: ' + this.hp);
+            this.hitpoints.setText('HP: ' + this.hp);
         }
         life = this.physics.add.group();
         this.physics.add.collider(this.player, life, lifeup, null, this);
@@ -679,7 +679,7 @@ function update ()
         this.speakingtext.setText('HEYOO YOU BEAT THE GAME M8');
     }
     if (this.timer == 130 && this.setdifficulty == 8){
-        this.speakingtext.setText("I can't believe you've done this");
+        this.speakingtext.setText("I can't believe \nyou've done this");
     }
     if (this.timer == 460 && this.setdifficulty == 8){
         this.speakingtext.setText('What now?');
@@ -692,7 +692,6 @@ function update ()
     }
     if (this.timer == 1500 && this.setdifficulty == 8){
         this.speakingtext.setText('WATCH OUT!');
-        this.bosshp = 1;
         enemies.create(1000, 350, 'finalboss').setInteractive().setVelocity(Phaser.Math.Between(-300, -50), 0).setBounce(1);
     }
     if (this.timer == 2000 && this.setdifficulty == 8){
@@ -702,11 +701,11 @@ function update ()
         this.speakingtext.setText("OK now the games's over");
     }
     if (this.timer == 2800 && this.setdifficulty == 8){
-        this.speakingtext.setText('CONGRATULATIONS! YOU SCORED '+points+' POINTS!');
         var points = this.score;
-        if(this.hitpoint>0){
-            points = points*this.score;
+        if(this.hp > 0){
+            points = points*this.hp;
         }
+        this.speakingtext.setText('CONGRATULATIONS! \nYOU SCORED '+points+' POINTS!');
         var delayInMilliseconds = 5000; //5 second
         setTimeout(function() {
             var xmlhttp = new XMLHttpRequest();
