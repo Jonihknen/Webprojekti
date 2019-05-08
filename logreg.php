@@ -26,9 +26,7 @@
         <button type="submit" name="login" class="btn">
         <span>LOGIN </span></button>
     </div>
-    <p>
     <p> Not a member? <a id= regclick href="#register">register</a></p>
-    </p>
 </form>
 </div>
 <div id="register">

@@ -3,8 +3,7 @@
 <html>
 <head>
     <title>Account settings</title>
-    <link rel="stylesheet" type="text/css" href="css/highscores.css">
-
+    <link rel="stylesheet" type="text/css" href="css/account.css">
 </head>
 <body>
 
@@ -17,10 +16,18 @@
     ?>
 
 </h3>
+<div id="delnappi"><button>Delete account</button></div>
 
+<div id="delform">
 <form action="account.php" method="post">
     <?php include("errors.php"); ?>
-    <p>Delete account</p>
+    <p>Insert password to delete account</p>
     Password: <input type="password" name="delete">
     <input type="submit">
 </form>
+    <button id="peruuta">Cancel deletion</button>
+</div>
+
+<script src="js/account.js"></script>
+</body>
+</html>
