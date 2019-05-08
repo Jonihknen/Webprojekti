@@ -9,7 +9,6 @@
     <title>Selainpeli X</title>
     <link rel="stylesheet" type="text/css" href="css/prontpage.css">
     <script src="//cdn.jsdelivr.net/npm/phaser@3.1.1/dist/phaser.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
@@ -18,6 +17,7 @@
 <?php include("game.php");?>
 
     <div class="header">
+        <img id=topimage src="/assets/pagemedia/po.jpg">
         <h1> HOME PAGE </h1>
     </div>
 
@@ -37,7 +37,7 @@
     </nav>
 </div>
 
-<div class="content">
+<div class="userbar">
     <?php if (isset($_SESSION["success"])): ?>
         <div class="error success">
             <h3>
@@ -49,11 +49,19 @@
         </div>
     <?php endif ?>
 
+    <p class="loggedin">You are logged in as</p>
     <?php if (isset($_SESSION["username"])): ?>
-        <p><?php echo $_SESSION["username"]; ?></p>
-        <p><a href="account.php">Account settings</a></p>
-        <p><a href="highscore.php?name=<?php echo ($_SESSION['username'])?>">Personal Highscore</a></p>
-        <a href="prontpage.php?logout='1'" style="color: red;">logout</a>
+        <p class="username"><?php echo $_SESSION["username"]; ?></p>
+
+        <div class="dropdown">
+        <span>▼</span>
+            <div class="dropdown-content">
+                <p><a href="account.php">Account settings</a></p>
+                <p><a href="highscore.php?name=<?php echo ($_SESSION['username'])?>">Personal Highscore</a></p>
+                <a href="prontpage.php?logout='1'" style="color: red;">logout</a>
+            </div>
+        </div>
+
     <?php endif ?>
 </div>
 </body>

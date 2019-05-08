@@ -54,7 +54,7 @@
         this.score = 0;
         this.scoreText;
         this.hitpoints; //hp text
-        this.hp = 3;
+        this.hp = 1000000;
         this.nohits = 0; //invincibility timer
         this.timer = 0; //timer for enemy waves and stuff
         this.bosshp = 0;

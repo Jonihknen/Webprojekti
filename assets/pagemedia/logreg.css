@@ -4,7 +4,7 @@
 }
 
 html {
-    background: url(../asdw.jpg) no-repeat center center fixed;
+    background: url(asdw.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -45,8 +45,6 @@ form {
     border-radius: 5px;
     border: 1px solid gray;
 }
-
-
 .input-group button{
 
     display: inline-block;
@@ -93,5 +91,6 @@ form {
     border-radius: 5px;
     text-align: left;
 }
+
 
 

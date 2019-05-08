@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="css/logreg.css">
+    <link rel="stylesheet" type="text/css" href="assets/pagemedia/logreg.css">
 
 </head>
 <body>
@@ -27,7 +27,7 @@
         <span>LOGIN </span></button>
     </div>
     <p>
-    <a id= regclick href="#register">register</a>
+    <p> Not a member? <a id= regclick href="#register">register</a></p>
     </p>
 </form>
 </div>
@@ -55,7 +55,7 @@
         <button id=regbutton type="submit" name="register" class="btn">
             <span>REGISTER </span></button>
     </div>
-    <p><a id=logclick href="#login">login</a></p>
+    <p>Already a member? <a id=logclick href="#login">login</a></p>
 
 </form>
 </div>

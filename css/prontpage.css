@@ -1,4 +1,10 @@
-
+html {
+    background: url(../assets/pagemedia/asdw.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
 body {
     font-family: Arial, Verdana, sans-serif;
@@ -45,24 +51,61 @@ nav ul li:hover > ul {
     visibility:visible;
 }
 
-.peli{
+.peli {
     display: inline-block;
     position: static;
-    left: 16%;
-}
-.valikko {
-
 }
 
-.content {
+.userbar {
     font-family: Impact, Charcoal, sans-serif;
     position: absolute;
     top: 0px;
     right: 0px;
-    border-left: 3px solid black;
-    border-bottom: 3px solid black;
+    border-left: 3px #B0C4DE;
+    border-bottom: 3px #B0C4DE;
     border-radius: 0px 0px 0px 10px;
-    text-align: center;
-    background: #5F9EA0;
-    width: 140px;
+    width: 100%;
 }
+.dropdown {
+
+    margin-right: -90%;
+    font-size: 19px;
+    padding: -5px;
+    margin-top:  -5px;
+    margin-bottom: -5px;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: center;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    padding: 12px 16px;
+    right: 0;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.username{
+    margin-right: -90%;
+    font-size: 45px;
+    padding: -5px;
+    margin-top:  -5px;
+    margin-bottom: -5px;
+}
+.loggedin {
+
+    font-size: 15px;
+    padding: -4px;
+    margin-top: 3px;
+    margin-bottom: -5px;
+    margin-left: 89%;
+}
+.topimage{
+    width: 100%;
+    margin-top: 0px;
+}
+
+
