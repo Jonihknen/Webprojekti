@@ -10,102 +10,58 @@ body {
     font-family: Arial, Verdana, sans-serif;
     text-align: center;
 }
-h1 p {
-    padding: 3em;
-    margin:  1em;
-    margin-bottom: 0em;
-}
-nav {
-    position: absolute;
-    top: 110px;
-    left: -45px;
-    width: 50px;
 
-}
-nav ul {
-    list-style: none;
 
+ul {
+
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
-nav ul li {
+li {
     float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
     text-align: center;
-    top: 120px;
-    left: 10px;
-    width: 100px;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-nav ul li ul {
-    visibility: hidden;
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
 }
 
-nav ul li ul li {
-    list-style: square inside;
-    float: left;
-    margin-left: -15px;
-    width: 150px;
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
     text-align: left;
 }
 
-nav ul li:hover > ul {
-    visibility:visible;
-}
-
-.peli {
-    display: inline-block;
-    position: static;
-}
-
-.userbar {
-    font-family: Impact, Charcoal, sans-serif;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    border-left: 3px #B0C4DE;
-    border-bottom: 3px #B0C4DE;
-    border-radius: 0px 0px 0px 10px;
-    width: 100%;
-}
-.dropdown {
-
-    margin-right: -90%;
-    font-size: 19px;
-    padding: -5px;
-    margin-top:  -5px;
-    margin-bottom: -5px;
-    display: inline-block;
-}
-.dropdown-content {
-    display: none;
-    position: center;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    padding: 12px 16px;
-    right: 0;
-
-}
+.dropdown-content a:hover {background-color: #f1f1f1;}
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.username{
-    margin-right: -90%;
-    font-size: 45px;
-    padding: -5px;
-    margin-top:  -5px;
-    margin-bottom: -5px;
-}
-.loggedin {
-
-    font-size: 15px;
-    padding: -4px;
-    margin-top: 3px;
-    margin-bottom: -5px;
-    margin-left: 89%;
-}
-.topimage{
-    width: 100%;
-    margin-top: 0px;
-}
-
 

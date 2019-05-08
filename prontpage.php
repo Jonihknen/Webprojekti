@@ -13,11 +13,26 @@
 </head>
 
 <body>
+<div id="valikko" class="valikko">
+    <nav>
+        <ul>
+            <li><a href="prontpage.php">Frontpage</a></li>
+            <li><a href="highscore.php?name=">Highscores</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">you are logged in as <?php echo ($_SESSION['username'])?></a>
+                <div class="dropdown-content">
+                    <a href="account.php">Account settings</a>
+                    <a href="highscore.php?name=<?php echo ($_SESSION['username'])?>">Personal Highscore</a>
+                    <a href="prontpage.php?logout='1'" style="color: red;">logout</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</div>
 
 <?php include("game.php");?>
 
     <div class="header">
-        <img id=topimage src="/assets/pagemedia/po.jpg">
         <h1> HOME PAGE </h1>
     </div>
 
@@ -29,13 +44,6 @@
 <p>Get points for killing enemies. Collect berries to get more hp. Shieldkills give extra points.</p>
 <p>You can poke enemies with your mouse but it doesn't do anything...</p>
 
-<div id="valikko" class="valikko">
-    <nav>
-        <ul>
-            <li><a href="highscore.php?name=">Highscores</a></li>
-        </ul>
-    </nav>
-</div>
 
 <div class="userbar">
     <?php if (isset($_SESSION["success"])): ?>
@@ -52,15 +60,6 @@
     <p class="loggedin">You are logged in as</p>
     <?php if (isset($_SESSION["username"])): ?>
         <p class="username"><?php echo $_SESSION["username"]; ?></p>
-
-        <div class="dropdown">
-        <span>▼</span>
-            <div class="dropdown-content">
-                <p><a href="account.php">Account settings</a></p>
-                <p><a href="highscore.php?name=<?php echo ($_SESSION['username'])?>">Personal Highscore</a></p>
-                <a href="prontpage.php?logout='1'" style="color: red;">logout</a>
-            </div>
-        </div>
 
     <?php endif ?>
 </div>
