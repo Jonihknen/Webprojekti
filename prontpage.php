@@ -40,7 +40,7 @@
 
 <h3>RULES</h3>
 <p>WASD to move the player</p>
-<p>Spacebar to shoot</p>
+<p>Spacebar to shoot 2</p>
 <p>Get points for killing enemies. Collect berries to get more hp. Shieldkills give extra points.</p>
 <p>You can poke enemies with your mouse but it doesn't do anything...</p>
 
