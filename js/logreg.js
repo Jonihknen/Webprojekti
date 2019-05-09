@@ -12,7 +12,7 @@ if (window.location.hash === '#register') {
 document.getElementById('regclick').onclick = function() {
 	var element = document.getElementsByClassName('error');
 	document.getElementById('login').style.display = 'none';
-	if(element){
+	if(element[0] || element[1]){
 		element[0].style.display = 'none';
 		element[1].style.display = 'none';
 	}
@@ -22,7 +22,7 @@ document.getElementById('regclick').onclick = function() {
 
 document.getElementById('logclick').onclick = function() {
 	var element = document.getElementsByClassName('error');
-	if(element){
+	if(element[0] || element[1]){
 		element[1].style.display = 'none';
 		element[0].style.display = 'none';
 	}
