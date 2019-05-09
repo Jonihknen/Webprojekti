@@ -14,6 +14,7 @@
 </div>
 
 <form method="post" action="logreg.php">
+
     <?php include("errors.php"); ?>
     <div class="input-group">
         <input type="text" name="username" placeholder="Username">

@@ -8,6 +8,7 @@ if (window.location.hash === '#register') {
 document.getElementById('regclick').onclick = function() {
 	document.getElementById('login').style.display = 'none';
 	document.getElementById('register').style.display = 'block';
+
 };
 
 document.getElementById('logclick').onclick = function() {

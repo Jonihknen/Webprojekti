@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb1201b1-925f-4808-b39e-b45d3158f1be" name="Default Changelist" comment="">
-<<<<<<< HEAD
-      <change afterPath="$PROJECT_DIR$/assets/pagemedia/metal.jpg" afterDir="false" />
+    <list default="true" id="a7344413-bd5e-4dac-9ae2-683e9b173b3a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/highscores.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/highscores.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/prontpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/prontpage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/highscore.php" beforeDir="false" afterPath="$PROJECT_DIR$/highscore.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prontpage.php" beforeDir="false" afterPath="$PROJECT_DIR$/prontpage.php" afterDir="false" />
-=======
       <change beforePath="$PROJECT_DIR$/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/account.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/account.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/account.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/highscores.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/highscores.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/logreg.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/logreg.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/prontpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/prontpage.css" afterDir="false" />
->>>>>>> 502d92aaaaf46b25237540b67beec1beb47295a6
+      <change beforePath="$PROJECT_DIR$/js/logreg.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/logreg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logreg.php" beforeDir="false" afterPath="$PROJECT_DIR$/logreg.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,58 +16,22 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="webprojekti@localhost [2]" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="webprojekti@localhost [2]" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="webprojekti@localhost [2]" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="webprojekti: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="webprojekti@localhost [2]" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="webprojekti: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="users: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/prontpage.php">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="170">
-              <caret line="28" column="13" selection-start-line="15" selection-end-line="30" selection-end-column="6" />
-              <folding>
-                <element signature="n#style#0;n#a#2;n#div#0;n#li#2;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-=======
-            <state relative-caret-position="221">
-              <caret line="28" column="54" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="54" />
->>>>>>> 502d92aaaaf46b25237540b67beec1beb47295a6
+            <state relative-caret-position="102">
+              <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/highscore.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -82,80 +39,64 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/prontpage.css">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="164">
-              <caret line="71" lean-forward="true" selection-start-line="14" selection-end-line="71" />
-=======
-            <state relative-caret-position="220">
-              <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
->>>>>>> 502d92aaaaf46b25237540b67beec1beb47295a6
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/highscore.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
-              <folding>
-                <element signature="n#style#0;n#a#2;n#div#0;n#li#2;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-=======
-        <entry file="file://$PROJECT_DIR$/css/account.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
->>>>>>> 502d92aaaaf46b25237540b67beec1beb47295a6
+            <state relative-caret-position="799">
+              <caret line="68" column="18" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/css/highscores.css">
+        <entry file="file://$PROJECT_DIR$/css/logreg.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="844">
-              <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
-=======
-        <entry file="file://$PROJECT_DIR$/js/account.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="306">
+              <caret line="90" column="18" lean-forward="true" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/logreg.js">
+        <entry file="file://$PROJECT_DIR$/logreg.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="60" lean-forward="true" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
+            <state relative-caret-position="170">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/errors.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/logreg.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
->>>>>>> 502d92aaaaf46b25237540b67beec1beb47295a6
+            <state relative-caret-position="153">
+              <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/highscores.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="92" lean-forward="true" selection-start-line="33" selection-end-line="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/account.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="JavaScript File" />
-        <option value="CSS File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -163,50 +104,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pelisivu.html" />
-        <option value="$PROJECT_DIR$/pelisivu.php" />
-        <option value="$PROJECT_DIR$/verify.php" />
-        <option value="$PROJECT_DIR$/users.php" />
-        <option value="$PROJECT_DIR$/handler.php" />
-        <option value="$PROJECT_DIR$/API/create.php" />
-        <option value="$PROJECT_DIR$/API/user.php" />
-        <option value="$PROJECT_DIR$/API/server.php" />
-        <option value="$PROJECT_DIR$/errors.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/register.php" />
-        <option value="$PROJECT_DIR$/logreg.css" />
-        <option value="$PROJECT_DIR$/game/game.html" />
-        <option value="$PROJECT_DIR$/highscores/highscore_SQL.php" />
-        <option value="$PROJECT_DIR$/game/game.php" />
-        <option value="$PROJECT_DIR$/highscores/highscore.php" />
-        <option value="$PROJECT_DIR$/login.js" />
-        <option value="$PROJECT_DIR$/login.php" />
-        <option value="$PROJECT_DIR$/js/logreg.js" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/server.php" />
-        <option value="$PROJECT_DIR$/game.php" />
-        <option value="$PROJECT_DIR$/assets/pagemedia/logreg.css" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/logreg.php" />
-=======
-        <option value="$PROJECT_DIR$/assets/pagemedia/logreg.css" />
-        <option value="$PROJECT_DIR$/logreg.php" />
-        <option value="$PROJECT_DIR$/server.php" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/game.php" />
-        <option value="$PROJECT_DIR$/prontpage.php" />
-        <option value="$PROJECT_DIR$/highscore.php" />
-        <option value="$PROJECT_DIR$/css/logreg.css" />
-        <option value="$PROJECT_DIR$/css/highscores.css" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/css/prontpage.css" />
->>>>>>> 502d92aaaaf46b25237540b67beec1beb47295a6
-        <option value="$PROJECT_DIR$/js/account.js" />
-        <option value="$PROJECT_DIR$/account.php" />
+        <option value="$PROJECT_DIR$/css/highscores.css" />
         <option value="$PROJECT_DIR$/css/account.css" />
-        <option value="$PROJECT_DIR$/prontpage.php" />
-        <option value="$PROJECT_DIR$/css/prontpage.css" />
-        <option value="$PROJECT_DIR$/css/highscores.css" />
-        <option value="$PROJECT_DIR$/highscore.php" />
+        <option value="$PROJECT_DIR$/account.php" />
+        <option value="$PROJECT_DIR$/css/logreg.css" />
+        <option value="$PROJECT_DIR$/logreg.php" />
+        <option value="$PROJECT_DIR$/js/logreg.js" />
       </list>
     </option>
   </component>
@@ -215,25 +120,28 @@
       <path value="$PROJECT_DIR$/../php/" />
     </include_path>
   </component>
-<<<<<<< HEAD
   <component name="ProjectFrameBounds">
-    <option name="x" value="347" />
-    <option name="y" value="190" />
-    <option name="width" value="1538" />
+    <option name="x" value="195" />
+    <option name="y" value="50" />
+    <option name="width" value="1540" />
     <option name="height" value="850" />
-=======
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="745" />
-    <option name="width" value="765" />
-    <option name="height" value="1040" />
->>>>>>> 502d92aaaaf46b25237540b67beec1beb47295a6
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="htdocs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="htdocs" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -244,33 +152,12 @@
             <path>
               <item name="htdocs" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="css" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="htdocs" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="css" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="untitled33" type="b2602c69:ProjectViewProjectNode" />
-              <item name="untitled33" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="untitled33" type="b2602c69:ProjectViewProjectNode" />
-              <item name="untitled33" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="untitled33" type="b2602c69:ProjectViewProjectNode" />
-              <item name="untitled33" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -279,31 +166,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="hsqldb&#10;mariadb&#10;mysql" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\assets\pagemedia" />
-      <recent name="C:\xampp\htdocs\projekti" />
-      <recent name="C:\xampp\htdocs\projekti\js" />
-      <recent name="C:\xampp\htdocs\css" />
-      <recent name="C:\Users\miely\PhpstormProjects\projekti" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\testi\untitled33\assets" />
-      <recent name="C:\testi\untitled33\js" />
-      <recent name="C:\xampp\htdocs\game" />
-      <recent name="C:\xampp\htdocs" />
-    </key>
+    <property name="WebServerToolWindowFactoryState" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -322,305 +185,142 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cb1201b1-925f-4808-b39e-b45d3158f1be" name="Default Changelist" comment="" />
-      <created>1555936081758</created>
+      <changelist id="a7344413-bd5e-4dac-9ae2-683e9b173b3a" name="Default Changelist" comment="" />
+      <created>1557400182984</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1555936081758</updated>
-      <workItem from="1555936083195" duration="15445000" />
-      <workItem from="1556360156149" duration="15573000" />
-      <workItem from="1556731527534" duration="3959000" />
-      <workItem from="1556785876685" duration="21586000" />
-      <workItem from="1556990744283" duration="204000" />
-      <workItem from="1556990994538" duration="185000" />
-      <workItem from="1556991301512" duration="1603000" />
-      <workItem from="1557055359118" duration="8584000" />
-      <workItem from="1557136588468" duration="796000" />
-      <workItem from="1557155491687" duration="4277000" />
-      <workItem from="1557170161162" duration="3855000" />
-      <workItem from="1557217358164" duration="11351000" />
-      <workItem from="1557246088526" duration="5672000" />
-      <workItem from="1557394557615" duration="3213000" />
+      <updated>1557400182984</updated>
+      <workItem from="1557400187601" duration="538000" />
+      <workItem from="1557400750193" duration="1359000" />
     </task>
-    <task id="LOCAL-00001" summary="salasana salainen">
-      <created>1557134945673</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1557134945673</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="113656000" />
-=======
-    <option name="totallyTimeSpent" value="118908000" />
->>>>>>> 502d92aaaaf46b25237540b67beec1beb47295a6
+    <option name="totallyTimeSpent" value="1897000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="278" y="152" width="1230" height="680" extended-state="0" />
+    <frame x="156" y="40" width="1232" height="680" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22564103" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2542662" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3287037" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3297546" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.398773" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="PHP-CGI Server" order="10" weight="0.3297546" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.4270073" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32846716" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" order="13" weight="0.3297546" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32910448" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1876413" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2542662" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3287037" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3297546" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.398773" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="PHP-CGI Server" order="10" weight="0.3297546" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.334375" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32846716" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" order="13" weight="0.3297546" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32910448" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/Webprojekti" />
-      <path value="https://github.com/Jonihknen/Webprojekti.git" />
-    </ignored-roots>
-    <MESSAGE value="salasana salainen" />
-    <option name="LAST_COMMIT_MESSAGE" value="salasana salainen" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pelisivu.php" />
-    <entry file="file://$PROJECT_DIR$/users.php" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/62f4fd55-6bb6-425c-bc49-e4badad968cb/console.sql" />
-    <entry file="file://$PROJECT_DIR$/API/user.php" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/da298e3e-805a-4818-9395-0dd2f875b66d/console.sql" />
-    <entry file="das://da298e3e-805a-4818-9395-0dd2f875b66d/schema/webprojekti/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/verify.php" />
-    <entry file="file://$PROJECT_DIR$/handler.php" />
-    <entry file="file://$PROJECT_DIR$/API/create.php" />
-    <entry file="file://$PROJECT_DIR$/index.php" />
-    <entry file="file://$PROJECT_DIR$/game/game_copy.html" />
-    <entry file="file://$PROJECT_DIR$/logreg.css" />
-    <entry file="file://$PROJECT_DIR$/highscores/moi.html" />
-    <entry file="file://$PROJECT_DIR$/highscores/highscore_SQL.php" />
-    <entry file="file://C:/HTML/Koulutehtavat/tehtävät/labs/09 Single-Page Applications/css/notes.css" />
-    <entry file="file://C:/HTML/Koulutehtavat/tehtävät/labs/09 Single-Page Applications/js/lecture_notes.js" />
-    <entry file="file://C:/HTML/Koulutehtavat/tehtävät/labs/09 Single-Page Applications/lecture_notes.html" />
-    <entry file="file://$PROJECT_DIR$/register.php">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/HTML/Koulutehtavat/tehtävät/labs/04 CSS3 and Bootstrap/css/simple.css" />
-    <entry file="file://C:/HTML/Koulutehtavat/tehtävät/labs/04 CSS3 and Bootstrap/css/selectors.css" />
-    <entry file="file://C:/HTML/Koulutehtavat/tehtävät/labs/04 CSS3 and Bootstrap/css/targetstyles.css" />
-    <entry file="file://C:/HTML/Koulutehtavat/tehtävät/labs/04 CSS3 and Bootstrap/css/menustyles.css" />
-    <entry file="file://C:/HTML/Koulutehtavat/tehtävät/labs/04 CSS3 and Bootstrap/css/floatstyles.css" />
-    <entry file="file://C:/HTML/Koulutehtavat/tehtävät/labs/04 CSS3 and Bootstrap/css/comparison.css" />
-    <entry file="file://C:/HTML/Koulutehtavat/tehtävät/labs/04 CSS3 and Bootstrap/css/columnstyles.css" />
-    <entry file="file://C:/HTML/Koulutehtavat/tehtävät/labs/04 CSS3 and Bootstrap/css/boxstyles.css" />
-    <entry file="file://C:/HTML/Koulutehtavat/tehtävät/labs/04 CSS3 and Bootstrap/css/berries.css" />
-    <entry file="file://C:/HTML/Koulutehtavat/tehtävät/labs/04 CSS3 and Bootstrap/css/johndoe.css" />
-    <entry file="file://$PROJECT_DIR$/assets/pagemedia/userbg.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/pagemedia/logreg.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="60" column="16" lean-forward="true" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/assets/pagemedia/userbg.jpg">
-      <provider selected="true" editor-type-id="images" />
-=======
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="51">
-            <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2193">
-          <caret line="129" column="55" lean-forward="true" selection-start-line="129" selection-start-column="55" selection-end-line="129" selection-end-column="55" />
-        </state>
-      </provider>
->>>>>>> 502d92aaaaf46b25237540b67beec1beb47295a6
-    </entry>
-    <entry file="file://$PROJECT_DIR$/highscore.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+        <state relative-caret-position="-1683">
+          <caret line="3" column="104" selection-start-line="3" selection-start-column="104" selection-end-line="3" selection-end-column="104" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/highscores.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" selection-start-line="20" selection-end-line="29" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="17">
-            <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-          </first_editor>
-          <second_editor />
-=======
-    <entry file="file://$PROJECT_DIR$/css/prontpage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prontpage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-          <folding>
-            <element signature="n#style#0;n#a#2;n#div#0;n#li#2;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/logreg.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
->>>>>>> 502d92aaaaf46b25237540b67beec1beb47295a6
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logreg.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="28" column="54" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="123" column="9" lean-forward="true" selection-start-line="123" selection-start-column="9" selection-end-line="123" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/logreg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="60" lean-forward="true" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/errors.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/account.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/account.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+        <state relative-caret-position="398">
+          <caret line="92" lean-forward="true" selection-start-line="33" selection-end-line="92" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/account.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        <state relative-caret-position="136">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/prontpage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="71" lean-forward="true" selection-start-line="14" selection-end-line="71" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/server.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/highscores.css">
+    <entry file="file://$PROJECT_DIR$/highscore.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="844">
-          <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
+        <state relative-caret-position="204">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/prontpage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="28" column="13" selection-start-line="15" selection-end-line="30" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#a#2;n#div#0;n#li#2;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/highscore.php">
+    <entry file="file://$PROJECT_DIR$/css/prontpage.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#a#2;n#div#0;n#li#2;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="799">
+          <caret line="68" column="18" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/logreg.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="90" column="18" lean-forward="true" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/account.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logreg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/errors.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/logreg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
         </state>
       </provider>
     </entry>

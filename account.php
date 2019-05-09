@@ -1,4 +1,8 @@
-<?php include("server.php");?>
+<?php include("server.php");
+
+if (empty($_SESSION["username"])) {
+    header("location: logreg.php");
+}?>
 <!DOCTYPE html>
 <html>
 <head>
