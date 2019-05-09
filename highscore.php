@@ -1,6 +1,5 @@
 <?php
 include("server.php");
-
 if (empty($_SESSION["username"])) {
     header("location: logreg.php");
 } ?>
@@ -14,22 +13,27 @@ if (empty($_SESSION["username"])) {
 <body>
 
 
-=======
+<div id="valikko" class="valikko">
+    <nav>
+        <ul>
+
+
+            <li class="left"><a href="prontpage.php">Frontpage</a></li>
+            <li class="left"><a href="highscore.php?name=">Highscores</a></li>
+
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">you are logged in as <?php echo ($_SESSION['username'])?></a>
+                <div class="dropdown-content">
+                    <a href="account.php">Account settings</a>
+                    <a href="highscore.php?name=<?php echo ($_SESSION['username'])?>">Personal Highscore</a>
+                    <a href="prontpage.php?logout='1'" style="color: red;">logout</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</div>
 <h1>HIGHSCORES TOP 10</h1>
 
-<nav>
-    <ul>
-        <li><a href="prontpage.php">Frontpage</a></li>
-        <li>Account
-            <ul>
-                <li><a href="account.php">Account settings</a></li>
-                <li><a href="highscore.php?name=<?php echo ($_SESSION['username'])?>">Personal Highscore</a></li>
-                <li><a href="prontpage.php?logout='1'" style="color: red;">logout</a></li>
-            </ul>
-        </li>
-        <li><a href="highscore.php">Highscores</a></li>
-    </ul>
-</nav>
 <div id="divi" class="top10"></div>
 <h2>Search for highscores with a username</h2>
 
@@ -46,49 +50,46 @@ if (isset($_POST["name"]) && isset($_POST["points"])) {
 }
 ?>
 <script>
-    var onko = false;
-    function naytaKaikki(response) {
-        var arr = JSON.parse(response);
-        arr.sort(function(a, b){
-          return (b.Points) - (a.Points);
-        });
-        var i;
-        var out = "<table>";
-        for(i = 0; i < 10; i++) {
-            out += "<tr><td>" +
-                arr[i].User +
-                "</td><td>" +
-                arr[i].Points +
-                "</td></tr>";
-        }
-        out += "</table>";
-        document.getElementById("divi").innerHTML = out;
-        document.getElementById("divi").style.textAlign = 'center';
-    }
-    window.onload = naytaKaikki('<?php echo haeKaikki(); ?>');
-
-        function nayta(response) {
-        var arr = JSON.parse(response);
-        var i;
-        var out = "<table>";
-        for(i = 0; i < arr.length; i++) {
-            out += "<tr><td>" +
-                arr[i].User +
-                "</td><td>" +
-                arr[i].Points +
-                "</td></tr>";
-        }
-        out += "</table>";
-        document.getElementById("divi2").innerHTML = out;
-
-        if(arr.length == 0){
-            document.getElementById("search").innerHTML = "No matching results";
-            }
-        else{
-            document.getElementById("search").innerHTML = "Search results";
-        }
-
-    }
+	var onko = false;
+	function naytaKaikki(response) {
+		var arr = JSON.parse(response);
+		arr.sort(function(a, b){
+			return (b.Points) - (a.Points);
+		});
+		var i;
+		var out = "<table>";
+		for(i = 0; i < 10; i++) {
+			out += "<tr><td>" +
+				arr[i].User +
+				"</td><td>" +
+				arr[i].Points +
+				"</td></tr>";
+		}
+		out += "</table>";
+		document.getElementById("divi").innerHTML = out;
+		document.getElementById("divi").style.textAlign = 'center';
+	}
+	window.onload = naytaKaikki('<?php echo haeKaikki(); ?>');
+	function nayta(response) {
+		var arr = JSON.parse(response);
+		var i;
+		var out = "<table>";
+		for(i = 0; i < arr.length; i++) {
+			out += "<tr><td>" +
+				arr[i].User +
+				"</td><td>" +
+				arr[i].Points +
+				"</td></tr>";
+		}
+		out += "</table>";
+		document.getElementById("divi2").innerHTML = out;
+		if(arr.length == 0){
+			document.getElementById("search").innerHTML = "No matching results";
+		}
+		else{
+			document.getElementById("search").innerHTML = "Search results";
+		}
+	}
     <?php
         if (isset($_GET["name"])){
             $hae = hae($_GET["name"]);
@@ -96,7 +97,6 @@ if (isset($_POST["name"]) && isset($_POST["points"])) {
             echo "document.getElementById('getname').onclick = nayta('$hae');";
         }
         ?>;
-
 </script>
 
 

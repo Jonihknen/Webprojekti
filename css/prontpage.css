@@ -1,7 +1,6 @@
 html {
 
     background: url(../assets/pagemedia/metal.jpg) no-repeat center center fixed;
-
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -9,8 +8,13 @@ html {
 }
 
 body {
-    font-family: Arial, Verdana, sans-serif;
     text-align: center;
+    color: white;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
 
 }
 h1{

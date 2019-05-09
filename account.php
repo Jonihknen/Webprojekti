@@ -7,6 +7,26 @@
 </head>
 <body>
 
+<div id="valikko" class="valikko">
+    <nav>
+        <ul>
+
+
+            <li class="left"><a href="prontpage.php">Frontpage</a></li>
+            <li class="left"><a href="highscore.php?name=">Highscores</a></li>
+
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">you are logged in as <?php echo ($_SESSION['username'])?></a>
+                <div class="dropdown-content">
+                    <a href="account.php">Account settings</a>
+                    <a href="highscore.php?name=<?php echo ($_SESSION['username'])?>">Personal Highscore</a>
+                    <a href="prontpage.php?logout='1'" style="color: red;">logout</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</div>
+
 <h1>Account settings</h1>
 
 <h2>Username: <?php echo ($_SESSION['username'])?></h2>

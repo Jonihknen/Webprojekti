@@ -17,6 +17,7 @@
     <nav>
         <ul>
 
+
             <li class="left"><a href="prontpage.php">Frontpage</a></li>
             <li class="left"><a href="highscore.php?name=">Highscores</a></li>
 
