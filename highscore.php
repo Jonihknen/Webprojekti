@@ -13,6 +13,8 @@ if (empty($_SESSION["username"])) {
 </head>
 <body>
 
+
+
 <h1>HIGHSCORES</h1>
 <nav>
     <ul>

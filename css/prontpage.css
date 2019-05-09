@@ -1,5 +1,5 @@
 html {
-    background: url(../assets/pagemedia/asdw.jpg) no-repeat center center fixed;
+    background: url(../assets/pagemedia/metal.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -12,21 +12,26 @@ body {
 }
 
 
-ul {
-
-    width: 100%;
+.valikko ul {
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -8px;
+    font-size: 17px;
     list-style-type: none;
-    margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
 }
 
-li {
+
+.valikko .left{
     float: left;
 }
+.valikko .dropdown{
+    float: right;
+}
 
-li a, .dropbtn {
+.valikko li a, .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
@@ -34,34 +39,33 @@ li a, .dropbtn {
     text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+
+.valikko li a:hover, .dropdown:hover .dropbtn {
+    background-color: dimgray;
 }
 
-li.dropdown {
+.valikko li.dropdown {
     display: inline-block;
 }
 
-.dropdown-content {
+.valikko .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    background-color: #333;
+    min-width: 216px;
 }
 
-.dropdown-content a {
-    color: black;
+.valikko .dropdown-content a {
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-align: left;
+    text-align: center;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.valikko .dropdown-content a:hover {background-color: dimgray;}
 
-.dropdown:hover .dropdown-content {
+.valikko .dropdown:hover .dropdown-content {
     display: block;
 }
 

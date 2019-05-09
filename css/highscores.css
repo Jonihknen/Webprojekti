@@ -42,3 +42,61 @@ nav ul li ul li {
 nav ul li:hover > ul {
     visibility:visible;
 }
+
+.valikko ul {
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -8px;
+    font-size: 17px;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+
+.valikko .left{
+    float: left;
+}
+.valikko .dropdown{
+    float: right;
+}
+
+.valikko li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.valikko li a:hover, .dropdown:hover .dropbtn {
+    background-color: dimgray;
+}
+
+.valikko li.dropdown {
+    display: inline-block;
+}
+
+.valikko .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 216px;
+}
+
+.valikko .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.valikko .dropdown-content a:hover {background-color: dimgray;}
+
+.valikko .dropdown:hover .dropdown-content {
+    display: block;
+}
+

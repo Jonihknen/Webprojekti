@@ -16,8 +16,8 @@
 <div id="valikko" class="valikko">
     <nav>
         <ul>
-            <li><a href="prontpage.php">Frontpage</a></li>
-            <li><a href="highscore.php?name=">Highscores</a></li>
+            <li class="left"><a href="prontpage.php">Frontpage</a></li>
+            <li class="left"><a href="highscore.php?name=">Highscores</a></li>
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">you are logged in as <?php echo ($_SESSION['username'])?></a>
                 <div class="dropdown-content">
@@ -33,7 +33,7 @@
 <?php include("game.php");?>
 
     <div class="header">
-        <h1> HOME PAGE </h1>
+        <h1> PELIN NIMI </h1>
     </div>
 
 <div id="peli" class="peli"></div>
