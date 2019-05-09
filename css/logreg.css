@@ -4,7 +4,7 @@
 }
 
 html {
-    background: url(../assets/wall.jpg) no-repeat center center fixed;
+    background: url(../assets/pagemedia/wall.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -17,9 +17,8 @@ html {
     width: 30%;
     margin: 50px auto 0px;
     color: white;
-    background: #5F9EA0;
+    background-color: darkcyan;
     text-align: center;
-    border: 1px solid #B0C4DE;
     border-bottom: none;
     border-radius: 10px 10px 0px 0px;
     padding: 20px;
@@ -28,7 +27,6 @@ form {
     width: 30%;
     margin: 0px auto;
     padding: 20px;
-    border: 1px solid #B0C4DE;
     background: white;
     border-radius: 0px 0px 10px 10px;
 }
@@ -48,19 +46,16 @@ form {
 
 
 .input-group button{
-
-    display: inline-block;
     border-radius: 4px;
-    background-color: mediumspringgreen;
+    background-color: dodgerblue;
     border: none;
     color: #FFFFFF;
     text-align: center;
     font-size: 22px;
     padding: 15px;
-    width: 100%;
+    width: 98%;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 0px;
 }
 .btn span {
     cursor: pointer;
@@ -85,7 +80,6 @@ form {
 }
 .error {
     width: 93%;
-    margin: 0px auto;
     padding: 10px;
     border: 1px solid #a94442;
     color: #a94442;

@@ -3,7 +3,8 @@
 <html>
 <head>
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="assets/pagemedia/logreg.css">
+    <link rel="stylesheet" type="text/css" href="css/logreg.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 <body>
@@ -16,6 +17,7 @@
 <form method="post" action="logreg.php">
 
     <?php include("errors.php"); ?>
+
     <div class="input-group">
         <input type="text" name="username" placeholder="Username">
     </div>
