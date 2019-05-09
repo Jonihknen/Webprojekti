@@ -27,7 +27,7 @@ if (empty($_SESSION["username"])) {
         <li><a href="highscore.php">Highscores</a></li>
     </ul>
 </nav>
-<div id="divi"></div>
+<div id="divi" class="top10"></div>
 <h2>Search for highscores with a username</h2>
 
 <form action="highscore.php" method="get">
