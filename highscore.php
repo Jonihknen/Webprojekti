@@ -19,7 +19,7 @@ if (empty($_SESSION["username"])) {
 
 
             <li class="left"><a href="prontpage.php">Frontpage</a></li>
-            <li class="left"><a href="highscore.php?name=">Highscores</a></li>
+            <li class="left"><a href="highscore.php">Highscores</a></li>
 
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">you are logged in as <?php echo ($_SESSION['username'])?></a>
