@@ -35,7 +35,7 @@ if (empty($_SESSION["username"])) {
 
 <h2>Username: <?php echo ($_SESSION['username'])?></h2>
 
-<h3>Highscore: <?php $pisteet = vertaa(($_SESSION['username']));
+<h2>Highscore: <?php $pisteet = vertaa(($_SESSION['username']));
     if($pisteet["points"]==null){
         echo "No highscores yet.";
     }
@@ -43,8 +43,8 @@ if (empty($_SESSION["username"])) {
         echo $pisteet["points"];
     }
     ?>
+</h2>
 
-</h3>
 <div id="delnappi"><button>Delete account</button></div>
 <?php include("errors.php"); ?>
 <div id="delform" class="delform">
