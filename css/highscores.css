@@ -31,8 +31,6 @@ td {
     padding-right: 2em;
 }
 
-
-
 .valikko ul {
     margin-top: -10px;
     margin-left: -10px;
@@ -42,14 +40,22 @@ td {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    outline: 1px solid black;
 }
-
 
 .valikko .left{
     float: left;
+    border-right: 1px solid black;
 }
 .valikko .dropdown{
     float: right;
+    border-left: 1px solid black;
+}
+.valikko .loginname {
+    float: right;
+    margin-top: -2px;
+    margin-bottom: -50px;
+    margin-right: 10px;
 }
 
 .valikko li a, .dropbtn {
@@ -61,8 +67,11 @@ td {
 }
 
 
+
+
 .valikko li a:hover, .dropdown:hover .dropbtn {
     background-color: dimgray;
+
 }
 
 .valikko li.dropdown {
@@ -72,8 +81,10 @@ td {
 .valikko .dropdown-content {
     display: none;
     position: absolute;
+    right: 0;
     background-color: #333;
-    min-width: 199px;
+    min-width: 15%;
+    outline: 1px solid black;
 }
 
 .valikko .dropdown-content a {
@@ -82,6 +93,7 @@ td {
     text-decoration: none;
     display: block;
     text-align: center;
+    border-bottom: 1px solid black;
 }
 
 .valikko .dropdown-content a:hover {background-color: dimgray;}
