@@ -14,8 +14,9 @@ if (empty($_SESSION["username"])) {
 <body>
 
 
+=======
+<h1>HIGHSCORES TOP 10</h1>
 
-<h1>HIGHSCORES</h1>
 <nav>
     <ul>
         <li><a href="prontpage.php">Frontpage</a></li>
@@ -29,12 +30,12 @@ if (empty($_SESSION["username"])) {
         <li><a href="highscore.php">Highscores</a></li>
     </ul>
 </nav>
-<div id="divi"></div>
-<h2>Search for highcores with a username</h2>
+<div id="divi" class="top10"></div>
+<h2>Search for highscores with a username</h2>
 
 <form action="highscore.php" method="get">
     Username: <input type="text" name="name">
-    <input type="submit" id="asd">
+    <input type="submit" id="getname">
 </form>
 <h3 id="search"></h3>
 <div id="divi2"></div>
@@ -53,8 +54,7 @@ if (isset($_POST["name"]) && isset($_POST["points"])) {
         });
         var i;
         var out = "<table>";
-
-        for(i = 0; i < arr.length; i++) {
+        for(i = 0; i < 10; i++) {
             out += "<tr><td>" +
                 arr[i].User +
                 "</td><td>" +
@@ -71,7 +71,6 @@ if (isset($_POST["name"]) && isset($_POST["points"])) {
         var arr = JSON.parse(response);
         var i;
         var out = "<table>";
-
         for(i = 0; i < arr.length; i++) {
             out += "<tr><td>" +
                 arr[i].User +
@@ -81,17 +80,22 @@ if (isset($_POST["name"]) && isset($_POST["points"])) {
         }
         out += "</table>";
         document.getElementById("divi2").innerHTML = out;
+
+        if(arr.length == 0){
+            document.getElementById("search").innerHTML = "No matching results";
+            }
+        else{
             document.getElementById("search").innerHTML = "Search results";
+        }
+
     }
-    var hae<?php
+    <?php
         if (isset($_GET["name"])){
             $hae = hae($_GET["name"]);
-            //echo $hae;
-            echo "='".$hae."'";
+            //echo "='".$hae."'";
+            echo "document.getElementById('getname').onclick = nayta('$hae');";
         }
         ?>;
-
-    document.getElementById("asd").onclick = nayta(hae);
 
 </script>
 

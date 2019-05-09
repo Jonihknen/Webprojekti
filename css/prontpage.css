@@ -1,5 +1,7 @@
 html {
+
     background: url(../assets/pagemedia/metal.jpg) no-repeat center center fixed;
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -9,8 +11,16 @@ html {
 body {
     font-family: Arial, Verdana, sans-serif;
     text-align: center;
-}
 
+}
+h1{
+    color: white;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+}
 
 .valikko ul {
     margin-top: -10px;
@@ -68,4 +78,18 @@ body {
 .valikko .dropdown:hover .dropdown-content {
     display: block;
 }
-
+div.rules {
+    border: 1px solid black;
+    padding: 1px;
+    margin-left: 12em;
+    margin-right: 12em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    color: white;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+    background: darkslategray;
+}
