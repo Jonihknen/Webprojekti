@@ -71,6 +71,7 @@ if (isset($_POST["name"]) && isset($_POST["points"])) {
 		document.getElementById("divi").style.textAlign = 'center';
 	}
 	window.onload = naytaKaikki('<?php echo haeKaikki(); ?>');
+
 	function nayta(response) {
 		var arr = JSON.parse(response);
 		var i;
