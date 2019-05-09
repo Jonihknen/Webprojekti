@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="0b63bd7d-f3a5-4f05-8db0-8248ff76ab04" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/js/highscore.js" beforeDir="false" />
+=======
+    <list default="true" id="0a90c98b-883a-438d-8e5c-532cbb51a043" name="Default Changelist" comment="">
+>>>>>>> 6846dd080f0646dd159f011768f455b38012fccb
       <change beforePath="$PROJECT_DIR$/js/logreg.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/logreg.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -12,6 +16,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/prontpage.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -53,24 +58,45 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="218">
               <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/logreg.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+>>>>>>> 6846dd080f0646dd159f011768f455b38012fccb
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/css/prontpage.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="286">
               <caret line="99" selection-start-line="99" selection-end-line="99" />
+=======
+        <entry file="file://$PROJECT_DIR$/js/logreg.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+>>>>>>> 6846dd080f0646dd159f011768f455b38012fccb
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/highscore.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="201">
               <caret line="89" column="9" selection-start-line="89" selection-start-column="9" selection-end-line="89" selection-end-column="9" />
+=======
+        <entry file="file://$PROJECT_DIR$/css/account.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
+>>>>>>> 6846dd080f0646dd159f011768f455b38012fccb
             </state>
           </provider>
         </entry>
@@ -79,11 +105,16 @@
         <entry file="file://$PROJECT_DIR$/errors.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
+<<<<<<< HEAD
               <caret line="7" selection-start-line="7" selection-end-line="7" />
+=======
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+>>>>>>> 6846dd080f0646dd159f011768f455b38012fccb
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game.php">
           <provider selected="true" editor-type-id="text-editor" />
@@ -112,13 +143,25 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
+=======
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+>>>>>>> 6846dd080f0646dd159f011768f455b38012fccb
     <option name="x" value="745" />
     <option name="width" value="765" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
+<<<<<<< HEAD
     <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+=======
+    <navigator proportions="" version="1">
+>>>>>>> 6846dd080f0646dd159f011768f455b38012fccb
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -153,7 +196,22 @@
             <path>
               <item name="htdocs" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+<<<<<<< HEAD
               <item name="js" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+=======
+              <item name="assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="htdocs" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="pagemedia" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="htdocs" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="css" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+>>>>>>> 6846dd080f0646dd159f011768f455b38012fccb
             </path>
           </expand>
           <select />
@@ -164,11 +222,14 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\assets\pagemedia" />
     </key>
   </component>
+=======
+>>>>>>> 6846dd080f0646dd159f011768f455b38012fccb
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -185,6 +246,7 @@
     <configuration />
   </component>
   <component name="TaskManager">
+<<<<<<< HEAD
     <task active="true" id="Default" summary="Default task">
       <changelist id="a7344413-bd5e-4dac-9ae2-683e9b173b3a" name="Default Changelist" comment="" />
       <created>1557400182984</created>
@@ -204,6 +266,17 @@
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2542662" />
+=======
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="520000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16845638" />
+>>>>>>> 6846dd080f0646dd159f011768f455b38012fccb
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -249,6 +322,7 @@
       <window_info anchor="right" id="Database" order="4" />
     </layout-to-restore>
   </component>
+<<<<<<< HEAD
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -351,4 +425,6 @@
       </provider>
     </entry>
   </component>
+=======
+>>>>>>> 6846dd080f0646dd159f011768f455b38012fccb
 </project>
