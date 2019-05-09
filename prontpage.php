@@ -22,11 +22,11 @@
             <li class="left"><a href="highscore.php">Highscores</a></li>
 
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">you are logged in as <?php echo ($_SESSION['username'])?></a>
+                <a href="javascript:void(0)" class="dropbtn">You are logged in as <?php echo ($_SESSION['username'])?></a>
                 <div class="dropdown-content">
                     <a href="account.php">Account settings</a>
                     <a href="highscore.php?name=<?php echo ($_SESSION['username'])?>">Personal Highscore</a>
-                    <a href="prontpage.php?logout='1'" style="color: red;">logout</a>
+                    <a href="prontpage.php?logout='1'" style="color: red;">Logout</a>
                 </div>
             </li>
         </ul>
@@ -36,7 +36,7 @@
 <?php include("game.php");?>
 
     <div class="header">
-        <h1> PELIN NIMI </h1>
+        <h1> Metropelia </h1>
     </div>
 
 <div id="peli" class="peli"></div>

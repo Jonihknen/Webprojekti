@@ -18,6 +18,18 @@ button {
     margin-top: 5px;
     margin-bottom: 10px;
 }
+p{
+    color: red;
+    font-size: 28px;
+}
+.normi{
+    color: white;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+}
 #delform{
     background: #f10303;
     font-size: 26px;
