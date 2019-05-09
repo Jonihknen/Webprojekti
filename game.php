@@ -18,8 +18,11 @@
             update: update
         }
     };
+    var game;
+    setTimeout(function() {
+        game = new Phaser.Game(config);
+    }, 4000);
 
-    var game = new Phaser.Game(config);
 //------START OF PRELOAD-------------------------------------------------------------------------------------------------------------------
     function preload ()
     {

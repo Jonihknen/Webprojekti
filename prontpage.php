@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Selainpeli X</title>
+    <title>Metropelia</title>
     <link rel="stylesheet" type="text/css" href="css/prontpage.css">
     <script src="//cdn.jsdelivr.net/npm/phaser@3.1.1/dist/phaser.js"></script>
 
@@ -37,7 +37,7 @@
 <?php include("game.php");?>
 
     <div class="header">
-        <h1> Metropelia </h1>
+        <img src="assets/pagemedia/game.png">
     </div>
 
 <div id="peli" class="peli"></div>
