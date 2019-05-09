@@ -1,8 +1,33 @@
-
+html {
+    background: url(../assets/wall.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 body {
     text-align: center;
     margin: auto;
+    color: white;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
 }
 button {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#delform{
+    background: #f10303;
+    font-size: 26px;
+    margin-left:15em;
+    margin-right:15em;
+    border: 1px solid black;
     padding-top: 5px;
+    padding-left: 2em;
+    padding-right: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
 }

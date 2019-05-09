@@ -1,5 +1,5 @@
 html {
-    background: url(../assets/pagemedia/asdw.jpg) no-repeat center center fixed;
+    background: url(../assets/wall.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -9,8 +9,16 @@ html {
 body {
     font-family: Arial, Verdana, sans-serif;
     text-align: center;
-}
 
+}
+h1{
+    color: white;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+}
 
 ul {
 
