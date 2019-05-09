@@ -32,7 +32,7 @@ if (empty($_SESSION["username"])) {
 
 <form action="highscore.php" method="get">
     Username: <input type="text" name="name">
-    <input type="submit" id="asd">
+    <input type="submit" id="getname">
 </form>
 <h3 id="search"></h3>
 <div id="divi2"></div>
@@ -69,7 +69,6 @@ if (isset($_POST["name"]) && isset($_POST["points"])) {
         var arr = JSON.parse(response);
         var i;
         var out = "<table>";
-
         for(i = 0; i < arr.length; i++) {
             out += "<tr><td>" +
                 arr[i].User +
@@ -79,17 +78,22 @@ if (isset($_POST["name"]) && isset($_POST["points"])) {
         }
         out += "</table>";
         document.getElementById("divi2").innerHTML = out;
+
+        if(arr.length == 0){
+            document.getElementById("search").innerHTML = "No matching results";
+            }
+        else{
             document.getElementById("search").innerHTML = "Search results";
+        }
+
     }
-    var hae<?php
+    <?php
         if (isset($_GET["name"])){
             $hae = hae($_GET["name"]);
-            //echo $hae;
-            echo "='".$hae."'";
+            //echo "='".$hae."'";
+            echo "document.getElementById('getname').onclick = nayta('$hae');";
         }
         ?>;
-
-    document.getElementById("asd").onclick = nayta(hae);
 
 </script>
 
