@@ -1,2 +1,4 @@
-# Webprojekti
-lisää2
+# Webprojekti - selainpeli
+This site requires registration. After making yourself an account you're redirected to the frontpage where the game begins.
+Move yourself with WASD and shoot with space. Try to get as many points as you can before dying. When the game ends your points are sent to the highscore board where they can be viewed by all the other users if you made the top 10. You may only have one highscore which you can try improving upon, only the best scores gets updated. If things get too heated for you and you find your social life withering away, you can always remove your account in the account settings.
+Have fun playing!

@@ -17,7 +17,7 @@
     <nav>
         <ul>
             <li><a href="prontpage.php">Frontpage</a></li>
-            <li><a href="highscore.php?name=">Highscores</a></li>
+            <li><a href="highscore.php">Highscores</a></li>
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">you are logged in as <?php echo ($_SESSION['username'])?></a>
                 <div class="dropdown-content">
@@ -38,12 +38,13 @@
 
 <div id="peli" class="peli"></div>
 
+<div id="rules" class="rules">
 <h3>RULES</h3>
 <p>WASD to move the player</p>
 <p>Spacebar to shoot 20</p>
 <p>Get points for killing enemies. Collect berries to get more hp. Shieldkills give extra points.</p>
 <p>You can poke enemies with your mouse but it doesn't do anything...</p>
-
+</div>
 
 <div class="userbar">
     <?php if (isset($_SESSION["success"])): ?>
@@ -57,11 +58,6 @@
         </div>
     <?php endif ?>
 
-    <p class="loggedin">You are logged in as</p>
-    <?php if (isset($_SESSION["username"])): ?>
-        <p class="username"><?php echo $_SESSION["username"]; ?></p>
-
-    <?php endif ?>
 </div>
 </body>
 

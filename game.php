@@ -54,7 +54,7 @@
         this.score = 0;
         this.scoreText;
         this.hitpoints; //hp text
-        this.hp = 1000000;
+        this.hp = 3;
         this.nohits = 0; //invincibility timer
         this.timer = 0; //timer for enemy waves and stuff
         this.bosshp = 0;
@@ -127,7 +127,7 @@
                         }
                     };
                     var s = "name=" + "<?php echo ($_SESSION["username"])?>" + "&points=" + points;
-                    xmlhttp.open("POST", "highscore.php?name=", true);
+                    xmlhttp.open("POST", "highscore.php", true);
                     xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
                     xmlhttp.send(s);
                 }, delayInMilliseconds);
@@ -252,7 +252,7 @@
                         }
                     };
                     var s = "name=" + "<?php echo ($_SESSION["username"])?>" + "&points=" + points;
-                    xmlhttp.open("POST", "highscore.php?name=", true);
+                    xmlhttp.open("POST", "highscore.php", true);
                     xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
                     xmlhttp.send(s);
                 }, delayInMilliseconds);
@@ -401,13 +401,13 @@ function update ()
                 if (enem1 == 0){skin = 'enemy'; }
                 else if (enem1 == 1){skin = 'enemy2'; }
                 else if (enem1 == 2){skin = 'enemy3'; }
-                enemies.create(1150, 95, skin).setInteractive().setVelocity(-250, 0).setBounce(1);
-                enemies.create(1150, 200, skin).setInteractive().setVelocity(-250, 0).setBounce(1);
-                enemies.create(1150, 300, skin).setInteractive().setVelocity(-250, 0).setBounce(1);
-                enemies.create(1150, 400, skin).setInteractive().setVelocity(-250, 0).setBounce(1);
-                enemies.create(1150, 500, skin).setInteractive().setVelocity(-250, 0).setBounce(1);
-                enemies.create(1150, 550, skin).setInteractive().setVelocity(-250, 0).setBounce(1);
-                enemies.create(1150, 600, skin).setInteractive().setVelocity(-250, 0).setBounce(1);
+                enemies.create(1000, 115, skin).setInteractive().setVelocity(-250, 0).setBounce(1);
+                enemies.create(1000, 200, skin).setInteractive().setVelocity(-250, 0).setBounce(1);
+                enemies.create(1000, 300, skin).setInteractive().setVelocity(-250, 0).setBounce(1);
+                enemies.create(1000, 400, skin).setInteractive().setVelocity(-250, 0).setBounce(1);
+                enemies.create(1000, 500, skin).setInteractive().setVelocity(-250, 0).setBounce(1);
+                enemies.create(1000, 550, skin).setInteractive().setVelocity(-250, 0).setBounce(1);
+                //enemies.create(1000, 600, skin).setInteractive().setVelocity(-250, 0).setBounce(1);
                 i += 1;                    
                 if (i < a) {           
                     setTimeout(enemylooplines(i, a), 300);            
@@ -422,7 +422,7 @@ function update ()
                 else if (enem1 == 1){skin = 'enemy2'; }
                 else if (enem1 == 2){skin = 'enemy3'; }
                    
-                enemies.create(1000, 95, skin).setInteractive().setVelocity(-200, 50).setBounce(1);
+                enemies.create(1000, 115, skin).setInteractive().setVelocity(-200, 50).setBounce(1);
                 enemies.create(1000, 150, skin).setInteractive().setVelocity(-200, 25).setBounce(1);
                 enemies.create(1000, 275, skin).setInteractive().setVelocity(-200, 13).setBounce(1);
                 enemies.create(1000, 350, skin).setInteractive().setVelocity(-200, 0).setBounce(1);
@@ -442,7 +442,7 @@ function update ()
                 if (enem1 == 0){skin = 'enemy'; }
                 else if (enem1 == 1){skin = 'enemy2'; }
                 else if (enem1 == 2){skin = 'enemy3'; }
-                enemies.create(1000, 100, skin).setInteractive().setVelocity(-200, 0).setBounce(1);
+                enemies.create(1000, 115, skin).setInteractive().setVelocity(-200, 0).setBounce(1);
                 i += 1;                    
             if (i < a) {           
                 setTimeout(enemyloopupper(i, a), 300);            
@@ -456,7 +456,7 @@ function update ()
                 if (enem1 == 0){skin = 'enemy'; }
                 else if (enem1 == 1){skin = 'enemy2'; }
                 else if (enem1 == 2){skin = 'enemy3'; }
-                enemies.create(1000, 666, skin).setInteractive().setVelocity(-200, 0).setBounce(1);
+                enemies.create(1000, 550, skin).setInteractive().setVelocity(-200, 0).setBounce(1);
                 i += 1;                    
             if (i < a) {           
                 setTimeout(enemylooplower(i, a), 300);            
@@ -470,13 +470,13 @@ function update ()
                 if (enem1 == 0){skin = 'enemy'; }
                 else if (enem1 == 1){skin = 'enemy2'; }
                 else if (enem1 == 2){skin = 'enemy3'; }
-                enemies.create(1150, 100, skin).setInteractive().setVelocity(-200, 150).setBounce(1);
-                enemies.create(1150, 175, skin).setInteractive().setVelocity(-200, 150).setBounce(1);
-                enemies.create(1150, 250, skin).setInteractive().setVelocity(-200, 150).setBounce(1);
-                enemies.create(1150, 325, skin).setInteractive().setVelocity(-200, 0).setBounce(1);
-                enemies.create(1150, 475, skin).setInteractive().setVelocity(-200, -150).setBounce(1);
-                enemies.create(1150, 500, skin).setInteractive().setVelocity(-200, -150).setBounce(1);
-                enemies.create(1150, 550, skin).setInteractive().setVelocity(-200, -150).setBounce(1);
+                enemies.create(1000, 115, skin).setInteractive().setVelocity(-200, 150).setBounce(1);
+                enemies.create(1000, 175, skin).setInteractive().setVelocity(-200, 150).setBounce(1);
+                enemies.create(1000, 250, skin).setInteractive().setVelocity(-200, 150).setBounce(1);
+                enemies.create(1000, 325, skin).setInteractive().setVelocity(-200, 0).setBounce(1);
+                enemies.create(1000, 475, skin).setInteractive().setVelocity(-200, -150).setBounce(1);
+                enemies.create(1000, 500, skin).setInteractive().setVelocity(-200, -150).setBounce(1);
+                enemies.create(1000, 550, skin).setInteractive().setVelocity(-200, -150).setBounce(1);
                 i += 1;                    
             if (i < a) {           
                 setTimeout(enemyloopzigzag(i, a), 300);            
@@ -490,11 +490,11 @@ function update ()
                 if (enem1 == 0){skin = 'enemy'; }
                 else if (enem1 == 1){skin = 'enemy2'; }
                 else if (enem1 == 2){skin = 'enemy3'; }
-                enemies.create(1150, 100, skin).setInteractive().setVelocity(Phaser.Math.Between(-600, -150), (25, 500)).setBounce(1);
-                enemies.create(1150, 250, skin).setInteractive().setVelocity(Phaser.Math.Between(-600, -150), (15, 200)).setBounce(1);
-                enemies.create(1150, 350, skin).setInteractive().setVelocity(Phaser.Math.Between(-600, -150), 0).setBounce(1);
-                enemies.create(1150, 500, skin).setInteractive().setVelocity(Phaser.Math.Between(-600, -150), (-15, -200)).setBounce(1);
-                enemies.create(1150, 550, skin).setInteractive().setVelocity(Phaser.Math.Between(-600, -150), (-25, -500)).setBounce(1);
+                enemies.create(1000, 115, skin).setInteractive().setVelocity(Phaser.Math.Between(-600, -150), (25, 500)).setBounce(1);
+                enemies.create(1000, 250, skin).setInteractive().setVelocity(Phaser.Math.Between(-600, -150), (15, 200)).setBounce(1);
+                enemies.create(1000, 350, skin).setInteractive().setVelocity(Phaser.Math.Between(-600, -150), 0).setBounce(1);
+                enemies.create(1000, 500, skin).setInteractive().setVelocity(Phaser.Math.Between(-600, -150), (-15, -200)).setBounce(1);
+                enemies.create(1000, 550, skin).setInteractive().setVelocity(Phaser.Math.Between(-600, -150), (-25, -500)).setBounce(1);
                 i += 1;                    
             if (i < a) {           
                 setTimeout(enemylooprandom(i, a), 300);            
@@ -625,7 +625,7 @@ function update ()
 
     //---------LIVES------------------------------------------------------
     if (this.timer == 300 || this.timer == 1300 || this.timer == 2200 || this.timer == 5000 || this.timer == 7000){
-        life.create(900, (Phaser.Math.Between(100, 650)), 'life').setInteractive().setVelocityX(Phaser.Math.Between(-500, -100)).setBounce(1);
+        life.create(900, (Phaser.Math.Between(100, 550)), 'life').setInteractive().setVelocityX(Phaser.Math.Between(-500, -100)).setBounce(1);
     }
     //-------ROTATING SHIELDS-----------------------------------------------------------
     Phaser.Actions.RotateAroundDistance(shield.getChildren(), this.hoverpoint, 0.1, 50);
@@ -715,7 +715,7 @@ function update ()
                 }
             };
             var s = "name=" + "<?php echo ($_SESSION["username"])?>" + "&points=" + points;
-            xmlhttp.open("POST", "highscore.php?name=", true);
+            xmlhttp.open("POST", "highscore.php", true);
             xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
             xmlhttp.send(s);
         }, delayInMilliseconds);

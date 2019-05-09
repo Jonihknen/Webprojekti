@@ -12,7 +12,12 @@
 <h2>Username: <?php echo ($_SESSION['username'])?></h2>
 
 <h3>Highscore: <?php $pisteet = vertaa(($_SESSION['username']));
-    echo $pisteet["points"]
+    if($pisteet["points"]==null){
+        echo "No highscores yet.";
+    }
+    else{
+        echo $pisteet["points"];
+    }
     ?>
 
 </h3>

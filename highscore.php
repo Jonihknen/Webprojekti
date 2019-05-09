@@ -13,7 +13,7 @@ if (empty($_SESSION["username"])) {
 </head>
 <body>
 
-<h1>HIGHSCORES</h1>
+<h1>HIGHSCORES TOP 10</h1>
 <nav>
     <ul>
         <li><a href="prontpage.php">Frontpage</a></li>
@@ -28,7 +28,7 @@ if (empty($_SESSION["username"])) {
     </ul>
 </nav>
 <div id="divi"></div>
-<h2>Search for highcores with a username</h2>
+<h2>Search for highscores with a username</h2>
 
 <form action="highscore.php" method="get">
     Username: <input type="text" name="name">
@@ -51,8 +51,7 @@ if (isset($_POST["name"]) && isset($_POST["points"])) {
         });
         var i;
         var out = "<table>";
-
-        for(i = 0; i < arr.length; i++) {
+        for(i = 0; i < 10; i++) {
             out += "<tr><td>" +
                 arr[i].User +
                 "</td><td>" +

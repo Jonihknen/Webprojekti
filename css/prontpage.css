@@ -64,4 +64,18 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
+div.rules {
+    border: 1px solid black;
+    padding: 1px;
+    margin-left: 12em;
+    margin-right: 12em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    color: white;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+    background: darkslategray;
+}

@@ -6,8 +6,12 @@
     $db = OpenCon();
 
 function OpenCon(){
-
-    $conn = new mysqli("localhost", "olso", "olso", "webprojekti", 3306) or die("connect failed: %s\n". $conn->error);
+    $address = "localhost";
+    $uname = "olso";
+    $password = "olso";
+    $dbname = "webprojekti";
+    $port = 3306;
+    $conn = new mysqli($address, $uname, $password, $dbname, $port) or die("connect failed: %s\n". $conn->error);
 
     return $conn;
 }
@@ -42,19 +46,19 @@ function userexists($username){
             array_push($errors, "Passwords do not match");
         }
         if (userexists($username)){
-            array_push($errors, "username already exists");
+            array_push($errors, "Username already exists");
         }
         if (preg_match("/^[0-9A-Za-z_]+$/", $username) == 0) {
-            array_push($errors, "invalid username");
+            array_push($errors, "Invalid username");
         }
         if (strlen($username) < 3) {
-            array_push($errors, "username must have at least 3 characters");
+            array_push($errors, "Username must have at least 3 characters");
         }
         if (strlen($username) > 10) {
-            array_push($errors, "username too long (maximum is 10 characters)");
+            array_push($errors, "Username too long (maximum is 10 characters)");
         }
         if (strlen($password_1) < 8) {
-            array_push($errors, "password must contain at least 8 characters");
+            array_push($errors, "Password must contain at least 8 characters");
 
         }
 
@@ -75,10 +79,10 @@ function userexists($username){
         $password = MD5($_POST["password"]);
 
         if (empty($username)) {
-            array_push($errors, "username is required");
+            array_push($errors, "Username is required");
         }
         if (empty($password)) {
-            array_push($errors, "password is required");
+            array_push($errors, "Password is required");
         }
 
         if (count($errors) == 0) {
@@ -93,7 +97,7 @@ function userexists($username){
                 $_SESSION["success"] = "you are now logged in";
                 header("Location: prontpage.php");
             }else{
-                array_push($errors, "wrong username or password");
+                array_push($errors, "Wrong username or password");
             }
         }
     }
@@ -102,7 +106,7 @@ function userexists($username){
         $name = ($_SESSION["username"]);
         $password = MD5($_POST["delete"]);
         if (empty($password)) {
-            array_push($errors, "password is required");
+            array_push($errors, "Password is required");
         }
         if (count($errors) == 0) {
             $sql = $db->prepare("SELECT * FROM users WHERE username=? AND password=?");
@@ -115,7 +119,7 @@ function userexists($username){
                 $sql->execute();
                 header("Location: prontpage.php?logout='1'");
             }else{
-                array_push($errors, "wrong password");
+                array_push($errors, "Wrong password");
             }
         }
     }
